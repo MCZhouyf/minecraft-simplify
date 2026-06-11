@@ -1,0 +1,43 @@
+{
+  "profiles" : {
+    "8555e799bb1cb04a2f2bd2aa125d671d" : {
+      "created" : "1970-01-02T00:00:00.000Z",
+      "icon" : "Grass",
+      "lastUsed" : "1970-01-02T00:00:00.000Z",
+      "lastVersionId" : "latest-release",
+      "name" : "",
+      "type" : "latest-release"
+    },
+    "adam-fabric-1-19" : {
+      "created" : "2026-06-05T20:56:00.000Z",
+      "icon" : "Fabric",
+      "javaArgs" : "-Xmx4G -Xms512M -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom",
+      "lastUsed" : "2026-06-11T22:26:50.058Z",
+      "lastVersionId" : "fabric-loader-0.14.18-1.19",
+      "name" : "ADAM Fabric 1.19",
+      "type" : "custom"
+    },
+    "da6bc2966f8188b08a4794ccd65e6cf6" : {
+      "created" : "1970-01-01T00:00:00.000Z",
+      "icon" : "Dirt",
+      "lastUsed" : "1970-01-01T00:00:00.000Z",
+      "lastVersionId" : "latest-snapshot",
+      "name" : "",
+      "type" : "latest-snapshot"
+    }
+  },
+  "settings" : {
+    "crashAssistance" : true,
+    "enableAdvanced" : true,
+    "enableAnalytics" : true,
+    "enableHistorical" : false,
+    "enableReleases" : true,
+    "enableSnapshots" : false,
+    "keepLauncherOpen" : true,
+    "profileSorting" : "ByLastPlayed",
+    "showGameLog" : true,
+    "showMenu" : false,
+    "soundOn" : false
+  },
+  "version" : 6
+}
