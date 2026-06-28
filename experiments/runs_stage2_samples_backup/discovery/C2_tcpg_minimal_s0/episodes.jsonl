@@ -1,0 +1,6 @@
+{"episode": 0, "natural_success": false, "steps_used": 11, "decided": {}}
+{"episode": 1, "natural_success": false, "steps_used": 18, "decided": {}}
+{"episode": 2, "natural_success": false, "steps_used": 26, "decided": {"held_tool": "accepted"}}
+{"episode": 3, "natural_success": false, "steps_used": 31, "decided": {"held_tool": "accepted"}}
+{"episode": 4, "natural_success": false, "steps_used": 36, "decided": {"held_tool": "accepted"}}
+{"episode": 5, "natural_success": false, "steps_used": 41, "decided": {"held_tool": "accepted"}}

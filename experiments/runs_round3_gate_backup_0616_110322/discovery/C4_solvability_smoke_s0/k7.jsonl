@@ -1,0 +1,1 @@
+{"type": "solvability_smoke", "run_id": "C4_solvability_smoke_s0", "bias": "C4", "action": "mineDiamondOre", "success": true, "gt_setup": {"inventory_extra": {}, "equipment": [], "commands": [], "spot_override": {"y": -10}}, "inventory": {"iron_pickaxe": 1, "chest": 1, "diamond": 1}}

@@ -1,0 +1,24 @@
+{
+  "run_id": "C4_solvability_smoke_s0",
+  "suite": "discovery",
+  "bias": "C4",
+  "mode": "solvability_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": true,
+  "wall_seconds": 25.9,
+  "gt_setup": {
+    "inventory_extra": {},
+    "equipment": [],
+    "commands": [],
+    "spot_override": {
+      "y": -10
+    }
+  },
+  "inventory": {
+    "iron_pickaxe": 1,
+    "chest": 1,
+    "diamond": 1
+  }
+}

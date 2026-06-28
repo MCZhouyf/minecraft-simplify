@@ -1,0 +1,38 @@
+You are a Minecraft game analysis assistant. Our task is to infer the effect of an action and explore the causal relationship by analyzing the items consumed and generated before and after an action. An action is a single, atomic action consisting of
+1. "Crafting" type actions, that is, combining raw materials into an item.
+2. "Collecting" type actions, that is, collecting certain items. There may be some by-products in this process.
+3. "Smelting" type actions, that is, consuming fuel and raw metal materials, and obtaining smelted items. A furnace is needed.
+
+It's possible that the action didn't have the expected effect, or that some additional items were collected, and we'll give multiple sampling records to ensure robustness. Such records all correspond to the execution of the same action. Your answer will only refer to the alphabetical codes of these items.
+The answer should be in the format {Cause; Effect}
+
+'A': 'redstone'
+'B': 'redstone_torch'
+{mapping}
+
+log corresponds to a variety of log named xx_log
+planks correspond to a variety of planks named xx_planks
+
+
+1. Initial items: iron_pickaxe, crafting_table ; Consumed items: ; Added items: redstone, cobblestone, cobbled_deepslate
+2. Initial items: iron_pickaxe, crafting_table ;Consumed items: ; Added items: cobblestone, redstone, andesite
+3. Initial items: iron_pickaxe, crafting_table ;Consumed items: ; Added items: granite
+4. Initial items: iron_pickaxe, crafting_table ;Consumed items: ; Added items: cobblestone, cobbled_deepslate
+5. Initial items: iron_pickaxe, crafting_table ;Consumed items: ; Added items: redstone, cobblestone
+
+Your inference:
+Because there is no item consumption, this is a "Collecting" task. Redstone is a higher-level mineral and needs to be collected with an iron_pickaxe ('k'). The rest of the items are considered additional items obtained during collection and will not be considered. So my answer is:
+Cause; Effect={k; A}
+
+
+1. Initial items: stick, redstone, crafting_table ; Consumed items: stick, redstone; Added items: redstone_torch
+2. Initial items: stick, redstone, crafting_table ; Consumed items: ; Added items:
+3. Initial items: stick, redstone, crafting_table ; Consumed items: redstone, stick; Added items: redstone_torch
+4. Initial items: stick, redstone, crafting_table ; Consumed items: stick, redstone; Added items: redstone_torch
+5. Initial items: stick, redstone, crafting_table ; Consumed items: redstone, stick; Added items: redstone_torch
+
+Your inference:
+Because redstone and sticks are being used to craft redstone torches, this is a "Crafting" task. In addition to raw materials, the "Crafting" task also requires crafting_table ('c'). So my answer is:
+Cause; Effect={c, d, A; B}
+
+

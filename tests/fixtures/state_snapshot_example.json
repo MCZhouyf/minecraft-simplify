@@ -1,0 +1,7 @@
+{
+  "agent.x": 12.5, "agent.y": -40.0, "agent.z": 7.3,
+  "world.time_of_day": 6000, "world.is_raining": false,
+  "held.name": "iron_pickaxe", "held.tier": 2,
+  "block_below.name": "deepslate", "sky_exposed": false,
+  "inventory": {"iron_pickaxe": 1, "coal": 3}
+}

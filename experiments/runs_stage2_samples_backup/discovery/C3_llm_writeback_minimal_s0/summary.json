@@ -1,0 +1,15 @@
+{
+  "run_id": "C3_llm_writeback_minimal_s0",
+  "suite": "discovery",
+  "bias": "C3",
+  "mode": "llm_writeback",
+  "feedback": "minimal",
+  "seed": 0,
+  "scripted": false,
+  "episodes": 6,
+  "steps_used": 0,
+  "wall_seconds": 297.0,
+  "time_budget_s": 1200,
+  "aborted": false,
+  "candidates": []
+}

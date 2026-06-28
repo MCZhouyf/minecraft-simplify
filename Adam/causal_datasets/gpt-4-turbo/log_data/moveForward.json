@@ -1,0 +1,13 @@
+[
+    {
+        "Start item": {
+            "birch_log": 1
+        },
+        "End item": {
+            "birch_log": 1
+        },
+        "Action type": "moveForward",
+        "Consumed items": [],
+        "Added items": []
+    }
+]

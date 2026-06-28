@@ -1,0 +1,29 @@
+{
+  "bias_id": "C1",
+  "action": "mineIronOre",
+  "expected_effect": "raw_iron x1",
+  "observation": {
+    "inventory": {
+      "stone_pickaxe": 1
+    },
+    "held": "stone_pickaxe",
+    "position": [
+      3,
+      -12,
+      8
+    ],
+    "time": 6000,
+    "nearby_blocks": [
+      "deepslate",
+      "deepslate_iron_ore"
+    ],
+    "feedback": ""
+  },
+  "ground_truth": {
+    "dimension": "capability",
+    "target": "held_tool",
+    "property": "tier",
+    "comparator": ">=",
+    "value": "iron"
+  }
+}

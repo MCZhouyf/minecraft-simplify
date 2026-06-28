@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MC-Drift task manifest",
+  "type": "object",
+  "required": [
+    "version",
+    "tasks"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "action",
+          "goal",
+          "family",
+          "ground_truth",
+          "origin",
+          "drift"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^U[0-9]{2}$"
+          },
+          "action": {
+            "type": "string"
+          },
+          "goal": {
+            "type": "string"
+          },
+          "family": {
+            "type": "string",
+            "enum": [
+              "resource_update",
+              "capability_update",
+              "boundary_update",
+              "situational_discovery"
+            ]
+          },
+          "ground_truth": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "drift": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

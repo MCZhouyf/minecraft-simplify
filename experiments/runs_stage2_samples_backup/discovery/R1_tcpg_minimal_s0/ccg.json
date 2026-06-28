@@ -1,0 +1,100 @@
+{
+  "e_out": {
+    "craftFurnace": "furnace",
+    "craftIronPickaxe": "iron_pickaxe",
+    "craftFence": "oak_fence",
+    "craftPlanks": "oak_planks",
+    "craftSticks": "stick",
+    "craftCraftingTable": "crafting_table",
+    "craftWoodenPickaxe": "wooden_pickaxe",
+    "craftStonePickaxe": "stone_pickaxe",
+    "craftDiamondPickaxe": "diamond_pickaxe",
+    "craftWoodenShovel": "wooden_shovel",
+    "mineIronOre": "raw_iron",
+    "mineGoldOre": "raw_gold",
+    "gatherCoalOre": "coal",
+    "mineDiamondOre": "diamond",
+    "gatherSand": "sand",
+    "gatherDirt": "dirt",
+    "gatherStone": "stone",
+    "gatherWoodLog": "oak_log",
+    "smeltRawIron": "iron_ingot",
+    "smeltRawGold": "gold_ingot"
+  },
+  "e_in": {
+    "craftFurnace": {
+      "cobblestone": 8
+    },
+    "craftIronPickaxe": {
+      "iron_ingot": 3,
+      "stick": 2
+    },
+    "craftFence": {
+      "oak_planks": 4,
+      "stick": 2
+    },
+    "craftPlanks": {
+      "oak_log": 1
+    },
+    "craftSticks": {
+      "oak_planks": 2
+    },
+    "craftCraftingTable": {
+      "oak_planks": 4
+    },
+    "craftWoodenPickaxe": {
+      "oak_planks": 3,
+      "stick": 2
+    },
+    "craftStonePickaxe": {
+      "cobblestone": 3,
+      "stick": 2
+    },
+    "craftDiamondPickaxe": {
+      "diamond": 3,
+      "stick": 2
+    },
+    "craftWoodenShovel": {
+      "oak_planks": 1,
+      "stick": 2
+    },
+    "mineIronOre": {},
+    "mineGoldOre": {},
+    "gatherCoalOre": {},
+    "mineDiamondOre": {},
+    "gatherSand": {},
+    "gatherDirt": {},
+    "gatherStone": {},
+    "gatherWoodLog": {},
+    "smeltRawIron": {
+      "raw_iron": 1,
+      "coal": 1
+    },
+    "smeltRawGold": {
+      "raw_gold": 1,
+      "coal": 1
+    }
+  },
+  "e_ca": {},
+  "conditions": {},
+  "rejected": {
+    "0a69498c864b": {
+      "action": "craftFurnace",
+      "dimension": "procedure",
+      "target": "nearby_block",
+      "property": "furnace",
+      "comparator": "<=k",
+      "value": 3,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "rejected",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": 5,
+      "cid": "0a69498c864b"
+    }
+  }
+}

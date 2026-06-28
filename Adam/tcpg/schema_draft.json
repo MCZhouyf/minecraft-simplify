@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "source": "observation interface (auto)",
+  "derived": {
+    "agent.x": {
+      "type": "number",
+      "derived_primitive_kind": "comparison",
+      "grounds_core_primitive": null
+    },
+    "agent.y": {
+      "type": "number",
+      "derived_primitive_kind": "comparison",
+      "grounds_core_primitive": "y_level"
+    },
+    "agent.z": {
+      "type": "number",
+      "derived_primitive_kind": "comparison",
+      "grounds_core_primitive": null
+    },
+    "block_below.name": {
+      "type": "string",
+      "derived_primitive_kind": "equality",
+      "grounds_core_primitive": "block_below"
+    },
+    "held.name": {
+      "type": "string",
+      "derived_primitive_kind": "equality",
+      "grounds_core_primitive": "held_item"
+    },
+    "held.tier": {
+      "type": "number",
+      "derived_primitive_kind": "comparison",
+      "grounds_core_primitive": "held_tool"
+    },
+    "inventory": {
+      "type": "map",
+      "derived_primitive_kind": "count_per_key",
+      "grounds_core_primitive": "inventory_count"
+    },
+    "sky_exposed": {
+      "type": "bool",
+      "derived_primitive_kind": "equality",
+      "grounds_core_primitive": "sky_exposed"
+    },
+    "world.is_raining": {
+      "type": "bool",
+      "derived_primitive_kind": "equality",
+      "grounds_core_primitive": "weather"
+    },
+    "world.time_of_day": {
+      "type": "number",
+      "derived_primitive_kind": "comparison",
+      "grounds_core_primitive": "time_of_day"
+    }
+  }
+}

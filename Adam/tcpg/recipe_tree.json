@@ -1,0 +1,195 @@
+{
+  "_comment": "Stage 5: static mechanism model of the suite's item chains (vanilla). Solvability injects bias modifications onto a COPY. via=mine|craft|smelt. tool_tier: minimal pickaxe tier index (wooden=0,stone=1,iron=2,diamond=3) needed to mine 'block'; null = hand/any.",
+  "oak_log": {
+    "via": "mine",
+    "block": "oak_log",
+    "tool_tier": null
+  },
+  "birch_log": {
+    "via": "mine",
+    "block": "birch_log",
+    "tool_tier": null
+  },
+  "stone": {
+    "via": "mine",
+    "block": "stone",
+    "tool_tier": 0,
+    "drops": "cobblestone"
+  },
+  "cobblestone": {
+    "via": "mine",
+    "block": "stone",
+    "tool_tier": 0
+  },
+  "coal": {
+    "via": "mine",
+    "block": "coal_ore",
+    "tool_tier": 0
+  },
+  "raw_iron": {
+    "via": "mine",
+    "block": "iron_ore",
+    "tool_tier": 1
+  },
+  "raw_gold": {
+    "via": "mine",
+    "block": "gold_ore",
+    "tool_tier": 2
+  },
+  "diamond": {
+    "via": "mine",
+    "block": "diamond_ore",
+    "tool_tier": 2
+  },
+  "gravel": {
+    "via": "mine",
+    "block": "gravel",
+    "tool_tier": null
+  },
+  "flint": {
+    "via": "mine",
+    "block": "gravel",
+    "tool_tier": null,
+    "probabilistic": true
+  },
+  "sand": {
+    "via": "mine",
+    "block": "sand",
+    "tool_tier": null
+  },
+  "dirt": {
+    "via": "mine",
+    "block": "dirt",
+    "tool_tier": null
+  },
+  "oak_planks": {
+    "via": "craft",
+    "inputs": {
+      "oak_log": 1
+    },
+    "out_count": 4,
+    "station": null
+  },
+  "birch_planks": {
+    "via": "craft",
+    "inputs": {
+      "birch_log": 1
+    },
+    "out_count": 4,
+    "station": null
+  },
+  "stick": {
+    "via": "craft",
+    "inputs": {
+      "oak_planks": 2
+    },
+    "out_count": 4,
+    "station": null
+  },
+  "crafting_table": {
+    "via": "craft",
+    "inputs": {
+      "oak_planks": 4
+    },
+    "out_count": 1,
+    "station": null
+  },
+  "chest": {
+    "via": "craft",
+    "inputs": {
+      "oak_planks": 8
+    },
+    "out_count": 1,
+    "station": "crafting_table"
+  },
+  "furnace": {
+    "via": "craft",
+    "inputs": {
+      "cobblestone": 8
+    },
+    "out_count": 1,
+    "station": "crafting_table"
+  },
+  "oak_fence": {
+    "via": "craft",
+    "inputs": {
+      "oak_planks": 4,
+      "stick": 2
+    },
+    "out_count": 3,
+    "station": "crafting_table"
+  },
+  "oak_boat": {
+    "via": "craft",
+    "inputs": {
+      "oak_planks": 5
+    },
+    "out_count": 1,
+    "station": "crafting_table"
+  },
+  "wooden_pickaxe": {
+    "via": "craft",
+    "inputs": {
+      "oak_planks": 3,
+      "stick": 2
+    },
+    "out_count": 1,
+    "station": "crafting_table"
+  },
+  "stone_pickaxe": {
+    "via": "craft",
+    "inputs": {
+      "cobblestone": 3,
+      "stick": 2
+    },
+    "out_count": 1,
+    "station": "crafting_table"
+  },
+  "iron_pickaxe": {
+    "via": "craft",
+    "inputs": {
+      "iron_ingot": 3,
+      "stick": 2
+    },
+    "out_count": 1,
+    "station": "crafting_table"
+  },
+  "diamond_pickaxe": {
+    "via": "craft",
+    "inputs": {
+      "diamond": 3,
+      "stick": 2
+    },
+    "out_count": 1,
+    "station": "crafting_table"
+  },
+  "wooden_shovel": {
+    "via": "craft",
+    "inputs": {
+      "oak_planks": 1,
+      "stick": 2
+    },
+    "out_count": 1,
+    "station": "crafting_table"
+  },
+  "iron_ingot": {
+    "via": "smelt",
+    "input": "raw_iron",
+    "fuel": "coal",
+    "station": "furnace"
+  },
+  "gold_ingot": {
+    "via": "smelt",
+    "input": "raw_gold",
+    "fuel": "coal",
+    "station": "furnace"
+  },
+  "oak_button": {
+    "via": "craft",
+    "inputs": {
+      "oak_planks": 1
+    },
+    "out_count": 1,
+    "station": null
+  }
+}

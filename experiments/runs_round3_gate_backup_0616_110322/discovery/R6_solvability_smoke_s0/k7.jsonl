@@ -1,0 +1,1 @@
+{"type": "solvability_smoke", "run_id": "R6_solvability_smoke_s0", "bias": "R6", "action": "mineGoldOre", "success": true, "gt_setup": {"inventory_extra": {"diamond_pickaxe": 1}, "equipment": ["diamond_pickaxe"]}, "inventory": {"diamond_pickaxe": 2, "chest": 1, "raw_gold": 1}}

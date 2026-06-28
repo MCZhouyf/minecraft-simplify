@@ -1,0 +1,6 @@
+{"episode": 0, "natural_success": false, "steps_used": 12, "decided": {}}
+{"episode": 1, "natural_success": false, "steps_used": 56, "decided": {}}
+{"episode": 2, "natural_success": false, "steps_used": 71, "decided": {}}
+{"episode": 3, "natural_success": false, "steps_used": 79, "decided": {}}
+{"episode": 4, "natural_success": false, "steps_used": 112, "decided": {"nearby_block": "rejected"}}
+{"episode": 5, "natural_success": false, "steps_used": 126, "decided": {"nearby_block": "rejected"}}

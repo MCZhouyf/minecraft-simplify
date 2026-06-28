@@ -1,0 +1,217 @@
+[
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32,
+            "wooden_pickaxe": 1
+        },
+        "End item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32,
+            "wooden_pickaxe": 1,
+            "dirt": 4,
+            "cobblestone": 16
+        },
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": [
+            "dirt",
+            "cobblestone"
+        ]
+    },
+    {
+        "Start item": {
+            "wooden_pickaxe": 1
+        },
+        "End item": {
+            "wooden_pickaxe": 1,
+            "cobblestone": 16,
+            "diorite": 1
+        },
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": [
+            "cobblestone",
+            "diorite"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32,
+            "wooden_pickaxe": 1
+        },
+        "End item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32,
+            "wooden_pickaxe": 1,
+            "dirt": 6,
+            "cobblestone": 16
+        },
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": [
+            "dirt",
+            "cobblestone"
+        ]
+    },
+    {
+        "Start item": {
+            "wooden_pickaxe": 1
+        },
+        "End item": {
+            "wooden_pickaxe": 1,
+            "cobblestone": 17
+        },
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": [
+            "cobblestone"
+        ]
+    },
+    {
+        "Start item": {
+            "wooden_pickaxe": 1
+        },
+        "End item": {
+            "wooden_pickaxe": 1,
+            "diorite": 1,
+            "cobblestone": 17
+        },
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": [
+            "diorite",
+            "cobblestone"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32,
+            "wooden_pickaxe": 1
+        },
+        "End item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32,
+            "wooden_pickaxe": 1,
+            "diorite": 1,
+            "cobblestone": 17
+        },
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": [
+            "diorite",
+            "cobblestone"
+        ]
+    },
+    {
+        "Start item": {
+            "wooden_pickaxe": 1
+        },
+        "End item": {
+            "wooden_pickaxe": 1,
+            "cobblestone": 16
+        },
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": [
+            "cobblestone"
+        ]
+    },
+    {
+        "Start item": {
+            "wooden_pickaxe": 1
+        },
+        "End item": {
+            "wooden_pickaxe": 1,
+            "cobblestone": 16
+        },
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": [
+            "cobblestone"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32,
+            "wooden_pickaxe": 1,
+            "diorite": 1,
+            "cobblestone": 32
+        },
+        "End item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32,
+            "wooden_pickaxe": 1,
+            "diorite": 1,
+            "cobblestone": 49
+        },
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": [
+            "cobblestone"
+        ]
+    },
+    {
+        "Start item": {
+            "wooden_pickaxe": 1
+        },
+        "End item": {
+            "wooden_pickaxe": 1,
+            "cobblestone": 14,
+            "diorite": 2
+        },
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": [
+            "cobblestone",
+            "diorite"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "gatherStone",
+        "Consumed items": [],
+        "Added items": []
+    }
+]

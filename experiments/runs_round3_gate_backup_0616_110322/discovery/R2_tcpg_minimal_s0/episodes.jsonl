@@ -1,0 +1,6 @@
+{"episode": 0, "natural_success": false, "steps_used": 31, "decided": {}}
+{"episode": 1, "natural_success": false, "steps_used": 64, "decided": {"nearby_block": "rejected"}}
+{"episode": 2, "natural_success": false, "steps_used": 76, "decided": {"station_type": "rejected", "nearby_block": "rejected"}}
+{"episode": 3, "natural_success": false, "steps_used": 85, "decided": {"station_type": "rejected", "nearby_block": "rejected"}}
+{"episode": 4, "natural_success": false, "steps_used": 94, "decided": {"station_type": "rejected", "nearby_block": "rejected", "inventory_count": "rejected"}}
+{"episode": 5, "natural_success": false, "steps_used": 95, "decided": {"station_type": "rejected", "nearby_block": "rejected", "inventory_count": "rejected"}}

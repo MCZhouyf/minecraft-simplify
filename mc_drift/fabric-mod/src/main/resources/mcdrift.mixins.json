@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "mcdrift.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CraftingResultSlotTakeMixin",
+    "ScreenHandlerCraftResultClickMixin",
+    "SlotCanTakeMixin",
+    "AbstractFurnaceBlockEntityMixin"
+  ],
+  "injectors": { "defaultRequire": 1 }
+}

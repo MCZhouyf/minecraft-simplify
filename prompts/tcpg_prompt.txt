@@ -1,0 +1,50 @@
+You are diagnosing why an action failed in an embodied environment.
+
+IMPORTANT: this environment may have been modified, so common-sense rules about
+how the world works can be WRONG — a gating condition that usually holds may
+have drifted. Propose the condition you would expect by default; the system
+will also test order-adjacent alternatives automatically, so you do not need to
+enumerate every possible threshold yourself.
+
+Action: {action}
+Expected effect: {expected_effect}
+Observation at failure:
+  inventory = {inventory}
+  held = {held}
+  position = {position}
+  time_of_day = {time}
+  nearby_blocks = {nearby_blocks}
+  feedback = "{feedback}"
+
+Step 1. From the mechanism dimensions
+  [resource, capability, procedure, context, environment]
+list those plausibly relevant to this failure (one short reason each).
+
+Step 2. For EACH selected dimension, propose 1-3 candidate gating conditions
+as JSON objects with EXACTLY these fields:
+  {{"dimension": ..., "target": ..., "property": ..., "comparator": ..., "value": ...}}
+Allowed (dimension -> target) combinations and their value conventions:
+{whitelist}
+
+Conventions:
+- held_tool: property is "tier", value is one of
+  [wooden, golden, stone, iron, diamond, netherite], comparator ">=".
+- held_item: property is "type", value is an item name or a tool category
+  (pickaxe/axe/shovel/sword/hoe), comparator "=".
+- inventory_count: property is the item name, value is an integer, comparator ">=".
+- nearby_block: property is the block name, value is a search radius (int),
+  comparator MUST be the literal "<=k" (not "<=2"/"<=3"). Example exactly:
+  {{"dimension":"procedure","target":"nearby_block","property":"furnace","comparator":"<=k","value":3}}
+- y_level: property "y", numeric value, comparator "<=" or ">=".
+- time_of_day: property "time", comparator "in", value [a, b] with
+  0 <= a < b <= 24000 (daytime is roughly [0, 12000]).
+- sky_exposed: property "sky", comparator "=", value true or false.
+- station_type / station_base_block: property "type", value a block name
+  ("stone" matches the stone family for bases), comparator "=".
+
+Step 3. After the JSON array, for each candidate add ONE sentence describing
+how an agent could make the condition TRUE and how to make it FALSE using
+only its own actions (a hint for the intervention compiler; not executed).
+
+Output format: first a single JSON array (no prose before it, no markdown
+fences), then the Step-3 sentences.

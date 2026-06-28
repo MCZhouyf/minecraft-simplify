@@ -1,0 +1,154 @@
+{
+  "e_out": {
+    "craftFurnace": "furnace",
+    "craftIronPickaxe": "iron_pickaxe",
+    "craftFence": "oak_fence",
+    "craftPlanks": "oak_planks",
+    "craftSticks": "stick",
+    "craftCraftingTable": "crafting_table",
+    "craftWoodenPickaxe": "wooden_pickaxe",
+    "craftStonePickaxe": "stone_pickaxe",
+    "craftDiamondPickaxe": "diamond_pickaxe",
+    "craftWoodenShovel": "wooden_shovel",
+    "mineIronOre": "raw_iron",
+    "mineGoldOre": "raw_gold",
+    "gatherCoalOre": "coal",
+    "mineDiamondOre": "diamond",
+    "gatherSand": "sand",
+    "gatherDirt": "dirt",
+    "gatherStone": "stone",
+    "gatherWoodLog": "oak_log",
+    "smeltRawIron": "iron_ingot",
+    "smeltRawGold": "gold_ingot"
+  },
+  "e_in": {
+    "craftFurnace": {
+      "cobblestone": 8
+    },
+    "craftIronPickaxe": {
+      "iron_ingot": 3,
+      "stick": 2
+    },
+    "craftFence": {
+      "oak_planks": 4,
+      "stick": 2
+    },
+    "craftPlanks": {
+      "oak_log": 1
+    },
+    "craftSticks": {
+      "oak_planks": 2
+    },
+    "craftCraftingTable": {
+      "oak_planks": 4
+    },
+    "craftWoodenPickaxe": {
+      "oak_planks": 3,
+      "stick": 2
+    },
+    "craftStonePickaxe": {
+      "cobblestone": 3,
+      "stick": 2
+    },
+    "craftDiamondPickaxe": {
+      "diamond": 3,
+      "stick": 2
+    },
+    "craftWoodenShovel": {
+      "oak_planks": 1,
+      "stick": 2
+    },
+    "mineIronOre": {},
+    "mineGoldOre": {},
+    "gatherCoalOre": {},
+    "mineDiamondOre": {},
+    "gatherSand": {},
+    "gatherDirt": {},
+    "gatherStone": {},
+    "gatherWoodLog": {},
+    "smeltRawIron": {
+      "raw_iron": 1,
+      "coal": 1
+    },
+    "smeltRawGold": {
+      "raw_gold": 1,
+      "coal": 1
+    }
+  },
+  "e_ca": {},
+  "conditions": {},
+  "rejected": {
+    "4a49323f17bc": {
+      "action": "craftFence",
+      "dimension": "procedure",
+      "target": "nearby_block",
+      "property": "crafting_table",
+      "comparator": "<=k",
+      "value": 1,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "rejected",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": 2,
+      "cid": "4a49323f17bc"
+    },
+    "a3c088d6f0a5": {
+      "action": "craftFence",
+      "dimension": "procedure",
+      "target": "station_type",
+      "property": "type",
+      "comparator": "=",
+      "value": "crafting_table",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "rejected",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": 3,
+      "cid": "a3c088d6f0a5"
+    },
+    "51b66d1aee2f": {
+      "action": "craftFence",
+      "dimension": "resource",
+      "target": "inventory_count",
+      "property": "stick",
+      "comparator": ">=",
+      "value": 2,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "rejected",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": 5,
+      "cid": "51b66d1aee2f"
+    },
+    "760bbace444c": {
+      "action": "craftFence",
+      "dimension": "resource",
+      "target": "inventory_count",
+      "property": "oak_planks",
+      "comparator": ">=",
+      "value": 4,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "rejected",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": 5,
+      "cid": "760bbace444c"
+    }
+  }
+}

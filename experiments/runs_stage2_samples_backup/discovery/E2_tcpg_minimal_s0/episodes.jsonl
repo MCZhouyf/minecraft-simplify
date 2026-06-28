@@ -1,0 +1,5 @@
+{"episode": 0, "natural_success": false, "steps_used": 22, "decided": {}}
+{"episode": 1, "natural_success": false, "steps_used": 23, "decided": {}}
+{"episode": 2, "natural_success": false, "steps_used": 34, "decided": {}}
+{"episode": 3, "natural_success": false, "steps_used": 48, "decided": {}}
+{"episode": 4, "natural_success": false, "steps_used": 59, "decided": {"station_type": "rejected"}}

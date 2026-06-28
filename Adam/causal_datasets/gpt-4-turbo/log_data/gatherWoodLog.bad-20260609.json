@@ -1,0 +1,95 @@
+[
+    {
+        "Start item": {},
+        "End item": {
+            "stick": 2
+        },
+        "Action type": "gatherWoodLog",
+        "Consumed items": [],
+        "Added items": [
+            "stick"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "gatherWoodLog",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {
+            "birch_sapling": 1
+        },
+        "Action type": "gatherWoodLog",
+        "Consumed items": [],
+        "Added items": [
+            "birch_sapling"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {
+            "birch_sapling": 1
+        },
+        "Action type": "gatherWoodLog",
+        "Consumed items": [],
+        "Added items": [
+            "birch_sapling"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {
+            "birch_sapling": 2
+        },
+        "Action type": "gatherWoodLog",
+        "Consumed items": [],
+        "Added items": [
+            "birch_sapling"
+        ]
+    },
+    {
+        "Start item": {
+            "birch_sapling": 1
+        },
+        "End item": {
+            "birch_sapling": 2
+        },
+        "Action type": "gatherWoodLog",
+        "Consumed items": [],
+        "Added items": [
+            "birch_sapling"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {
+            "stick": 5,
+            "birch_sapling": 4
+        },
+        "Action type": "gatherWoodLog",
+        "Consumed items": [],
+        "Added items": [
+            "stick",
+            "birch_sapling"
+        ]
+    },
+    {
+        "Start item": {
+            "diamond_hoe": 1
+        },
+        "End item": {
+            "diamond_hoe": 1,
+            "stick": 1,
+            "birch_sapling": 3
+        },
+        "Action type": "gatherWoodLog",
+        "Consumed items": [],
+        "Added items": [
+            "stick",
+            "birch_sapling"
+        ]
+    }
+]

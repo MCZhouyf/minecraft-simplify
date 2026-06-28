@@ -1,0 +1,23 @@
+{
+  "run_id": "C1_solvability_smoke_s0",
+  "suite": "discovery",
+  "bias": "C1",
+  "mode": "solvability_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": true,
+  "wall_seconds": 17.2,
+  "gt_setup": {
+    "inventory_extra": {},
+    "equipment": [],
+    "commands": [
+      "/setblock +3 ~ ~ minecraft:furnace"
+    ]
+  },
+  "inventory": {
+    "iron_pickaxe": 1,
+    "furnace": 1,
+    "chest": 1
+  }
+}

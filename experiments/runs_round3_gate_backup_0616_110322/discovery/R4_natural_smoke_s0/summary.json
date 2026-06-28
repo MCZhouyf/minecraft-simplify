@@ -1,0 +1,17 @@
+{
+  "run_id": "R4_natural_smoke_s0",
+  "suite": "discovery",
+  "bias": "R4",
+  "mode": "natural_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": false,
+  "wall_seconds": 16.1,
+  "inventory": {
+    "iron_ingot": 3,
+    "stick": 2,
+    "oak_planks": 2,
+    "chest": 1
+  }
+}

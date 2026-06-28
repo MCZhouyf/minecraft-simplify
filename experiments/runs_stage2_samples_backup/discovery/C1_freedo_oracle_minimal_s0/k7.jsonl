@@ -1,0 +1,179 @@
+{"ts": 1781434586.3158867, "trial_id": "-", "step": -1, "type": "intervention_step", "payload": {"cid": "-", "primitive": "equip", "args": {"name": "stone_pickaxe"}, "ok": true}}
+{"ts": 1781434610.3047957, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "action", "payload": {"action": "mineIronOre", "y": 0, "inventory_digest": "8eadec2255"}}
+{"ts": 1781434628.068296, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "validate", "payload": {"cid": "c201713cfdc9", "target": "inventory_count", "property": "raw_iron", "ok": true, "reason": ""}}
+{"ts": 1781434628.0685112, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "validate", "payload": {"cid": "55dd669bdaf6", "target": "held_tool", "property": "tier", "ok": true, "reason": ""}}
+{"ts": 1781434628.0685937, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "validate", "payload": {"cid": "33df85683fc6", "target": "held_item", "property": "type", "ok": true, "reason": ""}}
+{"ts": 1781434628.0686674, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "validate", "payload": {"cid": "41eb769a393e", "target": "nearby_block", "property": "iron_ore", "ok": true, "reason": ""}}
+{"ts": 1781434628.0687356, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "validate", "payload": {"cid": "6e6f4eab4449", "target": "held_item", "property": "type", "ok": true, "reason": ""}}
+{"ts": 1781434628.0688066, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "validate", "payload": {"cid": "8a71c1b030ca", "target": "time_of_day", "property": "time", "ok": true, "reason": ""}}
+{"ts": 1781434628.0688624, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "proposal", "payload": {"trigger": "failure", "attempt": 0, "n_items": 6, "n_legal": 6, "first_pass": {"total": 6, "legal": 6}}}
+{"ts": 1781434628.0689797, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "neighbor_expand", "payload": {"added": 2, "cids": ["c201713cfdc9", "55dd669bdaf6", "33df85683fc6", "41eb769a393e", "6e6f4eab4449", "8a71c1b030ca", "e7a699372a47", "f8b019e129a3"]}}
+{"ts": 1781434628.0765467, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "compile", "payload": {"cid": "c201713cfdc9", "feasible": true, "est_steps": 14.0, "infeasible_reason": null}}
+{"ts": 1781434628.0771923, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "compile", "payload": {"cid": "55dd669bdaf6", "feasible": true, "est_steps": 1.0, "infeasible_reason": null}}
+{"ts": 1781434628.077784, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "compile", "payload": {"cid": "33df85683fc6", "feasible": true, "est_steps": 23.5, "infeasible_reason": null}}
+{"ts": 1781434628.0781617, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "compile", "payload": {"cid": "41eb769a393e", "feasible": false, "est_steps": 0.0, "infeasible_reason": "no_macro"}}
+{"ts": 1781434628.0785177, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "compile", "payload": {"cid": "6e6f4eab4449", "feasible": true, "est_steps": 2.0, "infeasible_reason": null}}
+{"ts": 1781434628.0788717, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "compile", "payload": {"cid": "8a71c1b030ca", "feasible": true, "est_steps": 200.0, "infeasible_reason": null}}
+{"ts": 1781434628.079397, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "compile", "payload": {"cid": "e7a699372a47", "feasible": true, "est_steps": 23.5, "infeasible_reason": null}}
+{"ts": 1781434628.0799663, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "compile", "payload": {"cid": "f8b019e129a3", "feasible": true, "est_steps": 197.0, "infeasible_reason": null}}
+{"ts": 1781434628.0901175, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "nat_obs", "payload": {"cid": "c201713cfdc9", "side": "neg", "y": 0}}
+{"ts": 1781434628.0905063, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "nat_obs", "payload": {"cid": "55dd669bdaf6", "side": "pos", "y": 0}}
+{"ts": 1781434628.0907714, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "nat_obs", "payload": {"cid": "33df85683fc6", "side": "pos", "y": 0}}
+{"ts": 1781434628.0910218, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "nat_obs", "payload": {"cid": "41eb769a393e", "side": "neg", "y": 0}}
+{"ts": 1781434628.091268, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "nat_obs", "payload": {"cid": "6e6f4eab4449", "side": "pos", "y": 0}}
+{"ts": 1781434628.0915058, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "nat_obs", "payload": {"cid": "8a71c1b030ca", "side": "pos", "y": 0}}
+{"ts": 1781434628.091719, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "nat_obs", "payload": {"cid": "e7a699372a47", "side": "pos", "y": 0}}
+{"ts": 1781434628.0919335, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "nat_obs", "payload": {"cid": "f8b019e129a3", "side": "neg", "y": 0}}
+{"ts": 1781434628.1359458, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "intervention_start", "payload": {"cid": "c201713cfdc9", "side": "pos", "plan_len": 2, "ctx_snapshot": {"held.name": "stone_pickaxe", "agent.y": -40, "inventory_digest": "8eadec2255", "_full": {"agent.x": 2.5, "agent.y": -40, "agent.z": 0.5, "world.time_of_day": 6000, "world.is_raining": false, "held.name": "stone_pickaxe", "held.tier": 2, "block_below.name": "stone", "sky_exposed": false, "inventory": {"stone_pickaxe": 1, "iron_pickaxe": 1, "chest": 1}}}}}
+{"ts": 1781434657.5442443, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "retry", "payload": {"cid": "c201713cfdc9", "action": "mineIronOre", "y": 0}}
+{"ts": 1781434665.1314845, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "intervention_step", "payload": {"cid": "c201713cfdc9", "primitive": "placeItem", "args": {"name": "chest", "where": "near"}, "ok": true}}
+{"ts": 1781434665.1367805, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "undo", "payload": {"cid": "c201713cfdc9", "ok": true, "ctx_match": false}}
+{"ts": 1781434680.6326427, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 1, "type": "trigger_abort", "payload": {"cid": "c201713cfdc9", "reason": "undo_or_ctx_fail", "anchor_restored": true}}
+{"ts": 1781434699.9906867, "trial_id": "-", "step": -1, "type": "intervention_step", "payload": {"cid": "-", "primitive": "equip", "args": {"name": "stone_pickaxe"}, "ok": true}}
+{"ts": 1781434722.9229302, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "action", "payload": {"action": "mineIronOre", "y": 0, "inventory_digest": "8eadec2255"}}
+{"ts": 1781434732.7997391, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "validate", "payload": {"cid": "f9c9a837389a", "target": "inventory_count", "property": "iron_pickaxe", "ok": true, "reason": ""}}
+{"ts": 1781434732.8002613, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "validate", "payload": {"cid": "55dd669bdaf6", "target": "held_tool", "property": "tier", "ok": true, "reason": ""}}
+{"ts": 1781434732.800586, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "validate", "payload": {"cid": "33df85683fc6", "target": "held_item", "property": "type", "ok": true, "reason": ""}}
+{"ts": 1781434732.8008626, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "validate", "payload": {"cid": "6cebb6654338", "target": "nearby_block", "property": "iron_ore", "ok": true, "reason": ""}}
+{"ts": 1781434732.801129, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "validate", "payload": {"cid": "6cebb6654338", "target": "nearby_block", "property": "iron_ore", "ok": true, "reason": ""}}
+{"ts": 1781434732.801384, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "validate", "payload": {"cid": "6e6f4eab4449", "target": "held_item", "property": "type", "ok": true, "reason": ""}}
+{"ts": 1781434732.8016534, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "validate", "payload": {"cid": "8a71c1b030ca", "target": "time_of_day", "property": "time", "ok": true, "reason": ""}}
+{"ts": 1781434732.801866, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "proposal", "payload": {"trigger": "failure", "attempt": 0, "n_items": 7, "n_legal": 6, "first_pass": {"total": 7, "legal": 7}}}
+{"ts": 1781434732.802331, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "neighbor_expand", "payload": {"added": 2, "cids": ["f9c9a837389a", "55dd669bdaf6", "33df85683fc6", "6cebb6654338", "6e6f4eab4449", "8a71c1b030ca", "e7a699372a47", "f8b019e129a3"]}}
+{"ts": 1781434732.8083024, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "compile", "payload": {"cid": "f9c9a837389a", "feasible": true, "est_steps": 1.5, "infeasible_reason": null}}
+{"ts": 1781434732.8086505, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "compile", "payload": {"cid": "6cebb6654338", "feasible": false, "est_steps": 0.0, "infeasible_reason": "no_macro"}}
+{"ts": 1781434732.8140283, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "nat_obs", "payload": {"cid": "c201713cfdc9", "side": "neg", "y": 0}}
+{"ts": 1781434732.8142989, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "nat_obs", "payload": {"cid": "55dd669bdaf6", "side": "pos", "y": 0}}
+{"ts": 1781434732.8144846, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "nat_obs", "payload": {"cid": "33df85683fc6", "side": "pos", "y": 0}}
+{"ts": 1781434732.8146503, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "nat_obs", "payload": {"cid": "41eb769a393e", "side": "neg", "y": 0}}
+{"ts": 1781434732.814811, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "nat_obs", "payload": {"cid": "6e6f4eab4449", "side": "pos", "y": 0}}
+{"ts": 1781434732.8149726, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "nat_obs", "payload": {"cid": "8a71c1b030ca", "side": "pos", "y": 0}}
+{"ts": 1781434732.8151288, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "nat_obs", "payload": {"cid": "e7a699372a47", "side": "pos", "y": 0}}
+{"ts": 1781434732.8153105, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "nat_obs", "payload": {"cid": "f8b019e129a3", "side": "neg", "y": 0}}
+{"ts": 1781434732.8154707, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "nat_obs", "payload": {"cid": "f9c9a837389a", "side": "pos", "y": 0}}
+{"ts": 1781434732.815625, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "nat_obs", "payload": {"cid": "6cebb6654338", "side": "neg", "y": 0}}
+{"ts": 1781434732.8543105, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "intervention_start", "payload": {"cid": "c201713cfdc9", "side": "pos", "plan_len": 2, "ctx_snapshot": {"held.name": "stone_pickaxe", "agent.y": -40, "inventory_digest": "8eadec2255", "_full": {"agent.x": 2.5, "agent.y": -40, "agent.z": 0.5, "world.time_of_day": 6000, "world.is_raining": false, "held.name": "stone_pickaxe", "held.tier": 2, "block_below.name": "stone", "sky_exposed": false, "inventory": {"stone_pickaxe": 1, "iron_pickaxe": 1, "chest": 1}}}}}
+{"ts": 1781434762.628685, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "retry", "payload": {"cid": "c201713cfdc9", "action": "mineIronOre", "y": 0}}
+{"ts": 1781434770.3281217, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "intervention_step", "payload": {"cid": "c201713cfdc9", "primitive": "placeItem", "args": {"name": "chest", "where": "near"}, "ok": true}}
+{"ts": 1781434770.333253, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "undo", "payload": {"cid": "c201713cfdc9", "ok": true, "ctx_match": false}}
+{"ts": 1781434786.3145094, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 2, "type": "trigger_abort", "payload": {"cid": "c201713cfdc9", "reason": "undo_or_ctx_fail", "anchor_restored": true}}
+{"ts": 1781434804.981781, "trial_id": "-", "step": -1, "type": "intervention_step", "payload": {"cid": "-", "primitive": "equip", "args": {"name": "stone_pickaxe"}, "ok": true}}
+{"ts": 1781434828.0352292, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "action", "payload": {"action": "mineIronOre", "y": 0, "inventory_digest": "8eadec2255"}}
+{"ts": 1781434834.6908367, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "validate", "payload": {"cid": "7e1b60978e19", "target": "ingredient_type", "property": "iron_ore", "ok": true, "reason": ""}}
+{"ts": 1781434834.6914198, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "validate", "payload": {"cid": "55dd669bdaf6", "target": "held_tool", "property": "tier", "ok": true, "reason": ""}}
+{"ts": 1781434834.6917708, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "validate", "payload": {"cid": "33df85683fc6", "target": "held_item", "property": "type", "ok": true, "reason": ""}}
+{"ts": 1781434834.6920729, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "validate", "payload": {"cid": "77f4ef20a1eb", "target": "nearby_block", "property": "iron_ore", "ok": true, "reason": ""}}
+{"ts": 1781434834.6923573, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "validate", "payload": {"cid": "77f4ef20a1eb", "target": "nearby_block", "property": "iron_ore", "ok": true, "reason": ""}}
+{"ts": 1781434834.692643, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "validate", "payload": {"cid": "2f952e6286bb", "target": "time_of_day", "property": "time", "ok": true, "reason": ""}}
+{"ts": 1781434834.692857, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "proposal", "payload": {"trigger": "failure", "attempt": 0, "n_items": 6, "n_legal": 5, "first_pass": {"total": 6, "legal": 6}}}
+{"ts": 1781434834.6932957, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "neighbor_expand", "payload": {"added": 2, "cids": ["7e1b60978e19", "55dd669bdaf6", "33df85683fc6", "77f4ef20a1eb", "2f952e6286bb", "e7a699372a47", "f8b019e129a3"]}}
+{"ts": 1781434834.7000003, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "compile", "payload": {"cid": "7e1b60978e19", "feasible": false, "est_steps": 0.0, "infeasible_reason": "no_macro"}}
+{"ts": 1781434834.700552, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "compile", "payload": {"cid": "77f4ef20a1eb", "feasible": false, "est_steps": 0.0, "infeasible_reason": "no_macro"}}
+{"ts": 1781434834.7008998, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "compile", "payload": {"cid": "2f952e6286bb", "feasible": false, "est_steps": 0.0, "infeasible_reason": "no_macro"}}
+{"ts": 1781434834.709178, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "nat_obs", "payload": {"cid": "c201713cfdc9", "side": "neg", "y": 0}}
+{"ts": 1781434834.7095377, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "nat_obs", "payload": {"cid": "55dd669bdaf6", "side": "pos", "y": 0}}
+{"ts": 1781434834.7097847, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "nat_obs", "payload": {"cid": "33df85683fc6", "side": "pos", "y": 0}}
+{"ts": 1781434834.7100055, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "nat_obs", "payload": {"cid": "41eb769a393e", "side": "neg", "y": 0}}
+{"ts": 1781434834.7102184, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "nat_obs", "payload": {"cid": "6e6f4eab4449", "side": "pos", "y": 0}}
+{"ts": 1781434834.7104437, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "nat_obs", "payload": {"cid": "8a71c1b030ca", "side": "pos", "y": 0}}
+{"ts": 1781434834.7106621, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "nat_obs", "payload": {"cid": "e7a699372a47", "side": "pos", "y": 0}}
+{"ts": 1781434834.7108731, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "nat_obs", "payload": {"cid": "f8b019e129a3", "side": "neg", "y": 0}}
+{"ts": 1781434834.7110863, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "nat_obs", "payload": {"cid": "f9c9a837389a", "side": "pos", "y": 0}}
+{"ts": 1781434834.7113285, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "nat_obs", "payload": {"cid": "6cebb6654338", "side": "neg", "y": 0}}
+{"ts": 1781434834.711554, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "nat_obs", "payload": {"cid": "77f4ef20a1eb", "side": "neg", "y": 0}}
+{"ts": 1781434834.711772, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "nat_obs", "payload": {"cid": "2f952e6286bb", "side": "pos", "y": 0}}
+{"ts": 1781434834.7172377, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "intervention_start", "payload": {"cid": "33df85683fc6", "side": "neg", "plan_len": 2, "ctx_snapshot": {"held.name": "stone_pickaxe", "agent.y": -40, "inventory_digest": "8eadec2255", "_full": {"agent.x": 2.5, "agent.y": -40, "agent.z": 0.5, "world.time_of_day": 6000, "world.is_raining": false, "held.name": "stone_pickaxe", "held.tier": 2, "block_below.name": "stone", "sky_exposed": false, "inventory": {"stone_pickaxe": 1, "iron_pickaxe": 1, "chest": 1}}}}}
+{"ts": 1781434841.9742446, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "intervention_step", "payload": {"cid": "33df85683fc6", "primitive": "placeItem", "args": {"name": "chest", "where": "near"}, "ok": true}}
+{"ts": 1781434859.7492976, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "retry", "payload": {"cid": "33df85683fc6", "action": "mineIronOre", "y": 1}}
+{"ts": 1781434865.6780663, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "undo", "payload": {"cid": "33df85683fc6", "ok": true, "ctx_match": false}}
+{"ts": 1781434872.9958372, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 3, "type": "trigger_abort", "payload": {"cid": "33df85683fc6", "reason": "undo_or_ctx_fail", "anchor_restored": true}}
+{"ts": 1781434891.214074, "trial_id": "-", "step": -1, "type": "intervention_step", "payload": {"cid": "-", "primitive": "equip", "args": {"name": "stone_pickaxe"}, "ok": true}}
+{"ts": 1781434914.1527953, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "action", "payload": {"action": "mineIronOre", "y": 0, "inventory_digest": "8eadec2255"}}
+{"ts": 1781434925.3966024, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "validate", "payload": {"cid": "9a348fdac3b4", "target": "ingredient_type", "property": "raw_iron", "ok": true, "reason": ""}}
+{"ts": 1781434925.397116, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "validate", "payload": {"cid": "55dd669bdaf6", "target": "held_tool", "property": "tier", "ok": true, "reason": ""}}
+{"ts": 1781434925.3974354, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "validate", "payload": {"cid": "33df85683fc6", "target": "held_item", "property": "type", "ok": true, "reason": ""}}
+{"ts": 1781434925.3977094, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "validate", "payload": {"cid": "6cebb6654338", "target": "nearby_block", "property": "iron_ore", "ok": true, "reason": ""}}
+{"ts": 1781434925.3979712, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "validate", "payload": {"cid": "33df85683fc6", "target": "held_item", "property": "type", "ok": true, "reason": ""}}
+{"ts": 1781434925.3982468, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "validate", "payload": {"cid": "8a71c1b030ca", "target": "time_of_day", "property": "time", "ok": true, "reason": ""}}
+{"ts": 1781434925.3984575, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "proposal", "payload": {"trigger": "failure", "attempt": 0, "n_items": 6, "n_legal": 5, "first_pass": {"total": 6, "legal": 6}}}
+{"ts": 1781434925.3988836, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "neighbor_expand", "payload": {"added": 2, "cids": ["9a348fdac3b4", "55dd669bdaf6", "33df85683fc6", "6cebb6654338", "8a71c1b030ca", "e7a699372a47", "f8b019e129a3"]}}
+{"ts": 1781434925.4048114, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "compile", "payload": {"cid": "9a348fdac3b4", "feasible": false, "est_steps": 0.0, "infeasible_reason": "no_macro"}}
+{"ts": 1781434925.410993, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "nat_obs", "payload": {"cid": "c201713cfdc9", "side": "neg", "y": 0}}
+{"ts": 1781434925.411311, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "nat_obs", "payload": {"cid": "55dd669bdaf6", "side": "pos", "y": 0}}
+{"ts": 1781434925.4115243, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "nat_obs", "payload": {"cid": "33df85683fc6", "side": "pos", "y": 0}}
+{"ts": 1781434925.4117253, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "nat_obs", "payload": {"cid": "41eb769a393e", "side": "neg", "y": 0}}
+{"ts": 1781434925.4119024, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "nat_obs", "payload": {"cid": "6e6f4eab4449", "side": "pos", "y": 0}}
+{"ts": 1781434925.4120793, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "nat_obs", "payload": {"cid": "8a71c1b030ca", "side": "pos", "y": 0}}
+{"ts": 1781434925.4122503, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "nat_obs", "payload": {"cid": "e7a699372a47", "side": "pos", "y": 0}}
+{"ts": 1781434925.4124205, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "nat_obs", "payload": {"cid": "f8b019e129a3", "side": "neg", "y": 0}}
+{"ts": 1781434925.4125934, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "nat_obs", "payload": {"cid": "f9c9a837389a", "side": "pos", "y": 0}}
+{"ts": 1781434925.412765, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "nat_obs", "payload": {"cid": "6cebb6654338", "side": "neg", "y": 0}}
+{"ts": 1781434925.4129388, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "nat_obs", "payload": {"cid": "77f4ef20a1eb", "side": "neg", "y": 0}}
+{"ts": 1781434925.4131165, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "nat_obs", "payload": {"cid": "2f952e6286bb", "side": "pos", "y": 0}}
+{"ts": 1781434925.4552615, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "intervention_start", "payload": {"cid": "c201713cfdc9", "side": "pos", "plan_len": 2, "ctx_snapshot": {"held.name": "stone_pickaxe", "agent.y": -40, "inventory_digest": "8eadec2255", "_full": {"agent.x": 2.5, "agent.y": -40, "agent.z": 0.5, "world.time_of_day": 6000, "world.is_raining": false, "held.name": "stone_pickaxe", "held.tier": 2, "block_below.name": "stone", "sky_exposed": false, "inventory": {"stone_pickaxe": 1, "iron_pickaxe": 1, "chest": 1}}}}}
+{"ts": 1781434956.2908623, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "retry", "payload": {"cid": "c201713cfdc9", "action": "mineIronOre", "y": 0}}
+{"ts": 1781434973.02737, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "intervention_step", "payload": {"cid": "c201713cfdc9", "primitive": "placeItem", "args": {"name": "chest", "where": "near"}, "ok": true}}
+{"ts": 1781434973.0323884, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "undo", "payload": {"cid": "c201713cfdc9", "ok": true, "ctx_match": false}}
+{"ts": 1781434980.3543406, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 4, "type": "trigger_abort", "payload": {"cid": "c201713cfdc9", "reason": "undo_or_ctx_fail", "anchor_restored": true}}
+{"ts": 1781435000.010738, "trial_id": "-", "step": -1, "type": "intervention_step", "payload": {"cid": "-", "primitive": "equip", "args": {"name": "stone_pickaxe"}, "ok": true}}
+{"ts": 1781435022.9067361, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "action", "payload": {"action": "mineIronOre", "y": 0, "inventory_digest": "8eadec2255"}}
+{"ts": 1781435028.2280483, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "validate", "payload": {"cid": "b48776d3839f", "target": "inventory_count", "property": "stone_pickaxe", "ok": true, "reason": ""}}
+{"ts": 1781435028.2285476, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "validate", "payload": {"cid": "55dd669bdaf6", "target": "held_tool", "property": "tier", "ok": true, "reason": ""}}
+{"ts": 1781435028.228867, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "validate", "payload": {"cid": "33df85683fc6", "target": "held_item", "property": "type", "ok": true, "reason": ""}}
+{"ts": 1781435028.2291415, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "validate", "payload": {"cid": "41eb769a393e", "target": "nearby_block", "property": "iron_ore", "ok": true, "reason": ""}}
+{"ts": 1781435028.2294025, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "validate", "payload": {"cid": "41eb769a393e", "target": "nearby_block", "property": "iron_ore", "ok": true, "reason": ""}}
+{"ts": 1781435028.2296953, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "validate", "payload": {"cid": "8a71c1b030ca", "target": "time_of_day", "property": "time", "ok": true, "reason": ""}}
+{"ts": 1781435028.229913, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "proposal", "payload": {"trigger": "failure", "attempt": 0, "n_items": 6, "n_legal": 5, "first_pass": {"total": 6, "legal": 6}}}
+{"ts": 1781435028.2303479, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "neighbor_expand", "payload": {"added": 2, "cids": ["b48776d3839f", "55dd669bdaf6", "33df85683fc6", "41eb769a393e", "8a71c1b030ca", "e7a699372a47", "f8b019e129a3"]}}
+{"ts": 1781435028.2363703, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "compile", "payload": {"cid": "b48776d3839f", "feasible": true, "est_steps": 1.5, "infeasible_reason": null}}
+{"ts": 1781435028.2443779, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "c201713cfdc9", "side": "neg", "y": 0}}
+{"ts": 1781435028.2446983, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "55dd669bdaf6", "side": "pos", "y": 0}}
+{"ts": 1781435028.2449226, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "33df85683fc6", "side": "pos", "y": 0}}
+{"ts": 1781435028.2451222, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "41eb769a393e", "side": "neg", "y": 0}}
+{"ts": 1781435028.2453117, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "6e6f4eab4449", "side": "pos", "y": 0}}
+{"ts": 1781435028.2455065, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "8a71c1b030ca", "side": "pos", "y": 0}}
+{"ts": 1781435028.2456932, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "e7a699372a47", "side": "pos", "y": 0}}
+{"ts": 1781435028.2458794, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "f8b019e129a3", "side": "neg", "y": 0}}
+{"ts": 1781435028.2460651, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "f9c9a837389a", "side": "pos", "y": 0}}
+{"ts": 1781435028.2462537, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "6cebb6654338", "side": "neg", "y": 0}}
+{"ts": 1781435028.2464428, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "77f4ef20a1eb", "side": "neg", "y": 0}}
+{"ts": 1781435028.2466333, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "2f952e6286bb", "side": "pos", "y": 0}}
+{"ts": 1781435028.2468202, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "nat_obs", "payload": {"cid": "b48776d3839f", "side": "pos", "y": 0}}
+{"ts": 1781435028.2942467, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "intervention_start", "payload": {"cid": "c201713cfdc9", "side": "pos", "plan_len": 2, "ctx_snapshot": {"held.name": "stone_pickaxe", "agent.y": -40, "inventory_digest": "8eadec2255", "_full": {"agent.x": 2.5, "agent.y": -40, "agent.z": 0.5, "world.time_of_day": 6000, "world.is_raining": false, "held.name": "stone_pickaxe", "held.tier": 2, "block_below.name": "stone", "sky_exposed": false, "inventory": {"stone_pickaxe": 1, "iron_pickaxe": 1, "chest": 1}}}}}
+{"ts": 1781435058.5503285, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "retry", "payload": {"cid": "c201713cfdc9", "action": "mineIronOre", "y": 0}}
+{"ts": 1781435066.7484856, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "intervention_step", "payload": {"cid": "c201713cfdc9", "primitive": "placeItem", "args": {"name": "chest", "where": "near"}, "ok": true}}
+{"ts": 1781435066.7537715, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "undo", "payload": {"cid": "c201713cfdc9", "ok": true, "ctx_match": false}}
+{"ts": 1781435072.7004135, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 5, "type": "trigger_abort", "payload": {"cid": "c201713cfdc9", "reason": "undo_or_ctx_fail", "anchor_restored": true}}
+{"ts": 1781435091.4649227, "trial_id": "-", "step": -1, "type": "intervention_step", "payload": {"cid": "-", "primitive": "equip", "args": {"name": "stone_pickaxe"}, "ok": true}}
+{"ts": 1781435114.4045928, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "action", "payload": {"action": "mineIronOre", "y": 0, "inventory_digest": "8eadec2255"}}
+{"ts": 1781435120.4920955, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "validate", "payload": {"cid": "904d28a10c62", "target": "ingredient_type", "property": "iron_ore", "ok": true, "reason": ""}}
+{"ts": 1781435120.4925458, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "validate", "payload": {"cid": "55dd669bdaf6", "target": "held_tool", "property": "tier", "ok": true, "reason": ""}}
+{"ts": 1781435120.4928105, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "validate", "payload": {"cid": "33df85683fc6", "target": "held_item", "property": "type", "ok": true, "reason": ""}}
+{"ts": 1781435120.49304, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "validate", "payload": {"cid": "41eb769a393e", "target": "nearby_block", "property": "iron_ore", "ok": true, "reason": ""}}
+{"ts": 1781435120.4932642, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "validate", "payload": {"cid": "41eb769a393e", "target": "nearby_block", "property": "iron_ore", "ok": true, "reason": ""}}
+{"ts": 1781435120.4934876, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "validate", "payload": {"cid": "8a71c1b030ca", "target": "time_of_day", "property": "time", "ok": true, "reason": ""}}
+{"ts": 1781435120.493661, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "proposal", "payload": {"trigger": "failure", "attempt": 0, "n_items": 6, "n_legal": 5, "first_pass": {"total": 6, "legal": 6}}}
+{"ts": 1781435120.4940155, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "neighbor_expand", "payload": {"added": 2, "cids": ["904d28a10c62", "55dd669bdaf6", "33df85683fc6", "41eb769a393e", "8a71c1b030ca", "e7a699372a47", "f8b019e129a3"]}}
+{"ts": 1781435120.5009072, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "compile", "payload": {"cid": "904d28a10c62", "feasible": false, "est_steps": 0.0, "infeasible_reason": "no_macro"}}
+{"ts": 1781435120.5086114, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "c201713cfdc9", "side": "neg", "y": 0}}
+{"ts": 1781435120.509001, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "55dd669bdaf6", "side": "pos", "y": 0}}
+{"ts": 1781435120.5092676, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "33df85683fc6", "side": "pos", "y": 0}}
+{"ts": 1781435120.509495, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "41eb769a393e", "side": "neg", "y": 0}}
+{"ts": 1781435120.5097113, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "6e6f4eab4449", "side": "pos", "y": 0}}
+{"ts": 1781435120.5099347, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "8a71c1b030ca", "side": "pos", "y": 0}}
+{"ts": 1781435120.5101488, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "e7a699372a47", "side": "pos", "y": 0}}
+{"ts": 1781435120.5103571, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "f8b019e129a3", "side": "neg", "y": 0}}
+{"ts": 1781435120.51057, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "f9c9a837389a", "side": "pos", "y": 0}}
+{"ts": 1781435120.5107825, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "6cebb6654338", "side": "neg", "y": 0}}
+{"ts": 1781435120.5110195, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "77f4ef20a1eb", "side": "neg", "y": 0}}
+{"ts": 1781435120.5112398, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "2f952e6286bb", "side": "pos", "y": 0}}
+{"ts": 1781435120.5114827, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "nat_obs", "payload": {"cid": "b48776d3839f", "side": "pos", "y": 0}}
+{"ts": 1781435120.5168607, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "intervention_start", "payload": {"cid": "55dd669bdaf6", "side": "neg", "plan_len": 1, "ctx_snapshot": {"held.name": "stone_pickaxe", "agent.y": -40, "inventory_digest": "8eadec2255", "_full": {"agent.x": 2.5, "agent.y": -40, "agent.z": 0.5, "world.time_of_day": 6000, "world.is_raining": false, "held.name": "stone_pickaxe", "held.tier": 2, "block_below.name": "stone", "sky_exposed": false, "inventory": {"stone_pickaxe": 1, "iron_pickaxe": 1, "chest": 1}}}}}
+{"ts": 1781435149.2791152, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "retry", "payload": {"cid": "55dd669bdaf6", "action": "mineIronOre", "y": 0}}
+{"ts": 1781435156.3063173, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "undo", "payload": {"cid": "55dd669bdaf6", "ok": true, "ctx_match": true}}
+{"ts": 1781435156.322689, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "posterior_update", "payload": {"cid": "55dd669bdaf6", "pools": {"n_pos": 6, "k_pos": 0, "n_neg": 1, "k_neg": 0, "_last": ["neg", 0]}, "q_hat": 0.0135, "gamma_plus": 0.025}}
+{"ts": 1781435156.387309, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "intervention_start", "payload": {"cid": "c201713cfdc9", "side": "pos", "plan_len": 2, "ctx_snapshot": {"held.name": "stone_pickaxe", "agent.y": -40, "inventory_digest": "8eadec2255", "_full": {"agent.x": 4.4, "agent.y": -40, "agent.z": 0.5, "world.time_of_day": 6000, "world.is_raining": false, "held.name": "stone_pickaxe", "held.tier": 2, "block_below.name": "stone", "sky_exposed": false, "inventory": {"stone_pickaxe": 1, "iron_pickaxe": 1, "chest": 1}}}}}
+{"ts": 1781435187.7760823, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "retry", "payload": {"cid": "c201713cfdc9", "action": "mineIronOre", "y": 0}}
+{"ts": 1781435196.0960023, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "intervention_step", "payload": {"cid": "c201713cfdc9", "primitive": "placeItem", "args": {"name": "chest", "where": "near"}, "ok": true}}
+{"ts": 1781435196.1010458, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "undo", "payload": {"cid": "c201713cfdc9", "ok": true, "ctx_match": false}}
+{"ts": 1781435202.032675, "trial_id": "C1_freedo_oracle_minimal_s0", "step": 6, "type": "trigger_abort", "payload": {"cid": "c201713cfdc9", "reason": "undo_or_ctx_fail", "anchor_restored": true}}

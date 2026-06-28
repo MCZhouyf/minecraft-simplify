@@ -1,0 +1,671 @@
+[
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "oak_log": 32,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_planks": 32,
+            "stick": 32,
+            "crafting_table": 1
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "stick": 32,
+            "crafting_table": 1
+        },
+        "End item": {
+            "stick": 32,
+            "crafting_table": 1
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "stick": 32,
+            "crafting_table": 1
+        },
+        "End item": {
+            "stick": 32,
+            "crafting_table": 1
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_planks": 32,
+            "crafting_table": 1
+        },
+        "End item": {
+            "oak_planks": 32,
+            "crafting_table": 1
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_planks": 32,
+            "crafting_table": 1
+        },
+        "End item": {
+            "oak_planks": 32,
+            "crafting_table": 1
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "oak_log": 32,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32,
+            "stick": 32
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "oak_log": 32,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32,
+            "stick": 32
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_sapling": 1,
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "birch_sapling": 1,
+            "oak_log": 32,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32,
+            "stick": 32
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_planks": 4,
+            "stick": 16,
+            "crafting_table": 1
+        },
+        "End item": {
+            "stick": 14,
+            "birch_planks": 1,
+            "wooden_pickaxe": 1,
+            "crafting_table": 1
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "birch_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "oak_log": 32,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32,
+            "stick": 32
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "oak_log": 32,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32,
+            "stick": 32
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_planks": 32,
+            "stick": 32
+        },
+        "End item": {
+            "oak_planks": 32,
+            "stick": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_planks": 32,
+            "stick": 32
+        },
+        "End item": {
+            "oak_planks": 32,
+            "stick": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "End item": {
+            "crafting_table": 1,
+            "oak_planks": 32
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_planks": 10,
+            "stick": 4,
+            "crafting_table": 1
+        },
+        "End item": {
+            "stick": 2,
+            "birch_planks": 7,
+            "wooden_pickaxe": 1,
+            "crafting_table": 1
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "birch_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32
+        },
+        "End item": {
+            "stick": 30,
+            "wooden_pickaxe": 1,
+            "oak_log": 32,
+            "crafting_table": 1,
+            "oak_planks": 29
+        },
+        "Action type": "craftWoodenPickaxe",
+        "Consumed items": [
+            "oak_planks",
+            "stick"
+        ],
+        "Added items": [
+            "wooden_pickaxe"
+        ]
+    }
+]

@@ -1,0 +1,29 @@
+{
+  "bias_id": "C2",
+  "action": "mineGoldOre",
+  "expected_effect": "raw_gold x1",
+  "observation": {
+    "inventory": {
+      "iron_pickaxe": 1
+    },
+    "held": "iron_pickaxe",
+    "position": [
+      3,
+      -20,
+      8
+    ],
+    "time": 6000,
+    "nearby_blocks": [
+      "stone",
+      "gold_ore"
+    ],
+    "feedback": ""
+  },
+  "ground_truth": {
+    "dimension": "capability",
+    "target": "held_tool",
+    "property": "tier",
+    "comparator": ">=",
+    "value": "diamond"
+  }
+}

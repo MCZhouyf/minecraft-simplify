@@ -1,0 +1,24 @@
+# K0 global config for MC-Drift (Stage 1).
+# Fill minecraft_dir / world_name for YOUR machine before running --install.
+version: 1
+project: iap-agent
+
+# Absolute path to the Minecraft game directory (the one containing saves/, mods/, config/, logs/).
+# Windows example: "C:/Users/you/AppData/Roaming/.minecraft"
+# Linux example:   "/home/you/.minecraft"
+minecraft_dir: "/root/.minecraft"
+
+# Name of the single-player world that you open to LAN.
+world_name: "New World0609"
+
+# 1.19 / 1.19.2 / 1.19.3 -> pack_format 10 ; 1.19.4 -> 12
+minecraft_version: "1.19"
+
+lan_port_env: "ADAM_MC_PORT"
+feedback_level: "minimal"
+audit_log_path: null            # null -> {minecraft_dir}/logs/mcdrift_audit.jsonl
+admission:
+  enabled: false
+  k_trigger: 3
+  per_episode_cap: 1
+  global_cap: 8

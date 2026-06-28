@@ -1,0 +1,263 @@
+# K1 bias ground-truth configuration. Single source of truth:
+# the injector (datapack_gen.py) and the evaluator (experiments/evaluate.py) both read THIS file.
+# Stage 1 covers the 6 datapack-mechanism biases (R1-R3, C1-C3).
+# Stage 2 will append the 6 mod_event biases (P1-P2, X1-X2, E1-E2).
+version: 1
+biases:
+- id: R1
+  level: L1
+  dimension: resource
+  action: craftFurnace
+  mechanism: mod_event
+  payload:
+    gate: craft_result
+    params:
+      result_match: minecraft:furnace
+      require: inventory_min
+      item: minecraft:sand
+      count: 1
+  ground_truth:
+    target: inventory_count
+    property: sand
+    comparator: '>='
+    value: 1
+  failure_mode: no_output
+  feedback_text:
+    typed: '[resource]'
+    hinted: The furnace won't bind without a handful of sand on hand.
+  authored_blind: false
+  solvability:
+    verified: true
+    oracle_plan_steps: 42
+  intervention_check:
+    i_plus_compilable: true
+    i_minus_compilable: true
+- id: R2
+  level: L1
+  dimension: resource
+  action: craftFence
+  mechanism: mod_event
+  # R2 was a datapack_recipe (custom 8-plank oak_fence). The mineflayer agent
+  # crafts via its bundled minecraft-data (vanilla 4-plank) recipe and only
+  # honors the gate read from mcdrift.json, so the datapack recipe was inert
+  # (round3 R2 diagnostic: natural craftFence succeeded with 6 planks, failed
+  # only when sticks were removed -- the vanilla 4-plank/2-stick signature).
+  # Reframed as a mod craft_result gate requiring >= 8 oak_planks ON HAND to
+  # craft the fence: a possession/stockpile threshold bias, same machinery as
+  # R1's sand catalyst (craftItem.js -> mcdriftCraftGateAllows -> inventory_min).
+  # The vanilla recipe still consumes 4 planks; the gate only allows/blocks the
+  # craft. GT (inventory_count oak_planks >= 8) is unchanged and is realized by
+  # the contrast "< 8 -> blocked, >= 8 -> crafts".
+  payload:
+    gate: craft_result
+    params:
+      result_match: minecraft:oak_fence
+      require: inventory_min
+      item: minecraft:oak_planks
+      count: 8
+  ground_truth:
+    target: inventory_count
+    property: oak_planks
+    comparator: '>='
+    value: 8
+  failure_mode: no_output
+  feedback_text:
+    typed: '[resource]'
+    hinted: The fence won't come together unless you've a good stack of planks on hand.
+  authored_blind: false
+  solvability:
+    verified: true
+    oracle_plan_steps: 34
+  intervention_check:
+    i_plus_compilable: true
+    i_minus_compilable: true
+- id: R4
+  level: L3
+  dimension: resource
+  action: craftIronPickaxe
+  mechanism: mod_event
+  payload:
+    gate: craft_result
+    params:
+      result_match: minecraft:iron_pickaxe
+      require: inventory_min
+      item: minecraft:oak_button
+      count: 1
+  ground_truth:
+    target: inventory_count
+    property: oak_button
+    comparator: '>='
+    value: 1
+  failure_mode: no_output
+  feedback_text:
+    typed: '[resource]'
+    hinted: The pickaxe assembly seems to call for a small wooden button first.
+  authored_blind: false
+  solvability:
+    verified: true
+    oracle_plan_steps: 131
+  intervention_check:
+    i_plus_compilable: true
+    i_minus_compilable: true
+- id: R5
+  level: L2
+  dimension: capability
+  action: gatherCoalOre
+  mechanism: datapack_tag
+  payload:
+    tag_file: needs_stone_tool.json
+    values_add:
+    - minecraft:coal_ore
+    - minecraft:deepslate_coal_ore
+  ground_truth:
+    target: held_tool
+    property: pickaxe
+    comparator: '>='
+    value: stone
+  failure_mode: no_output
+  feedback_text:
+    typed: '[capability]'
+    hinted: Coal ore won't yield to a wooden tool.
+  authored_blind: false
+  solvability:
+    verified: true
+    oracle_plan_steps: 38
+  intervention_check:
+    i_plus_compilable: true
+    i_minus_compilable: true
+- id: R6
+  level: L2
+  dimension: capability
+  action: mineGoldOre
+  mechanism: datapack_tag
+  payload:
+    tag_file: needs_diamond_tool.json
+    values_add:
+    - minecraft:gold_ore
+    - minecraft:deepslate_gold_ore
+  ground_truth:
+    target: held_tool
+    property: pickaxe
+    comparator: '>='
+    value: diamond
+  failure_mode: no_output
+  feedback_text:
+    typed: '[capability]'
+    hinted: Gold ore needs a diamond-grade pickaxe to mine.
+  authored_blind: false
+  solvability:
+    verified: true
+    oracle_plan_steps: 331
+  intervention_check:
+    i_plus_compilable: true
+    i_minus_compilable: true
+- id: C1
+  level: L3
+  dimension: procedure
+  action: craftIronPickaxe
+  mechanism: mod_event
+  payload:
+    gate: craft_result
+    params:
+      result_match: minecraft:iron_pickaxe
+      require: nearby_block
+      block: minecraft:furnace
+      radius: 3
+  ground_truth:
+    target: nearby_block
+    property: furnace
+    comparator: <=k
+    value: 3
+  failure_mode: no_output
+  feedback_text:
+    typed: '[procedure]'
+    hinted: Forging the pickaxe needs a furnace close by.
+  authored_blind: false
+  solvability:
+    verified: true
+    oracle_plan_steps: 163
+  intervention_check:
+    i_plus_compilable: true
+    i_minus_compilable: true
+- id: C3
+  level: L5
+  dimension: environment
+  action: smeltRawIron
+  mechanism: mod_event
+  payload:
+    gate: furnace_tick
+    params:
+      require: nighttime
+  ground_truth:
+    target: time_of_day
+    property: clock
+    comparator: in
+    value:
+    - 13000
+    - 23000
+  failure_mode: no_output
+  feedback_text:
+    typed: '[environment]'
+    hinted: The furnace only makes progress after nightfall.
+  authored_blind: false
+  solvability:
+    verified: true
+    oracle_plan_steps: 78
+  intervention_check:
+    i_plus_compilable: true
+    i_minus_compilable: true
+- id: C4
+  level: L4
+  dimension: context
+  action: mineDiamondOre
+  mechanism: mod_event
+  payload:
+    gate: block_break
+    params:
+      block_match: minecraft:(deepslate_)?diamond_ore
+      require: player_y<=
+      value: -10
+  ground_truth:
+    target: y_level
+    property: y
+    comparator: <=
+    value: -10
+  failure_mode: no_output
+  feedback_text:
+    typed: '[context]'
+    hinted: Diamonds only drop when you dig deep enough.
+  authored_blind: false
+  solvability:
+    verified: true
+    oracle_plan_steps: 184
+  intervention_check:
+    i_plus_compilable: true
+    i_minus_compilable: true
+- id: C2
+  level: L4
+  dimension: context
+  action: craftBoat
+  mechanism: mod_event
+  payload:
+    gate: craft_result
+    params:
+      result_match: minecraft:oak_boat
+      require: nearby_block
+      block: minecraft:water
+      radius: 4
+  ground_truth:
+    target: nearby_block
+    property: water
+    comparator: <=k
+    value: 4
+  failure_mode: no_output
+  feedback_text:
+    typed: '[context]'
+    hinted: The boat won't take shape unless there's open water nearby.
+  authored_blind: false
+  solvability:
+    verified: true
+    oracle_plan_steps:
+  intervention_check:
+    i_plus_compilable: true
+    i_minus_compilable: true

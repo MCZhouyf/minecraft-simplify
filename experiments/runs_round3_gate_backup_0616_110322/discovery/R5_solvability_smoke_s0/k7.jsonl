@@ -1,0 +1,1 @@
+{"type": "solvability_smoke", "run_id": "R5_solvability_smoke_s0", "bias": "R5", "action": "gatherCoalOre", "success": true, "gt_setup": {"inventory_extra": {"stone_pickaxe": 1}, "equipment": ["stone_pickaxe"]}, "inventory": {"stone_pickaxe": 2, "chest": 1, "coal": 1}}

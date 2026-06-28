@@ -1,0 +1,72 @@
+[
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32,
+            "wooden_pickaxe": 1,
+            "dirt": 1,
+            "cobblestone": 32,
+            "stone_pickaxe": 1
+        },
+        "End item": {
+            "cobblestone": 24,
+            "furnace": 1,
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32,
+            "wooden_pickaxe": 1,
+            "dirt": 1,
+            "stone_pickaxe": 1
+        },
+        "Action type": "craftFurnace",
+        "Consumed items": [
+            "cobblestone"
+        ],
+        "Added items": [
+            "furnace"
+        ]
+    },
+    {
+        "Start item": {
+            "crafting_table": 1,
+            "cobblestone": 32
+        },
+        "End item": {
+            "cobblestone": 24,
+            "furnace": 1,
+            "crafting_table": 1
+        },
+        "Action type": "craftFurnace",
+        "Consumed items": [
+            "cobblestone"
+        ],
+        "Added items": [
+            "furnace"
+        ]
+    },
+    {
+        "Start item": {
+            "crafting_table": 1
+        },
+        "End item": {
+            "crafting_table": 1
+        },
+        "Action type": "craftFurnace",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "crafting_table": 1
+        },
+        "End item": {
+            "crafting_table": 1
+        },
+        "Action type": "craftFurnace",
+        "Consumed items": [],
+        "Added items": []
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32,
+            "wooden_pickaxe": 1,
+            "dirt": 1,
+            "cobblestone": 32,
+            "stone_pickaxe": 1,
+            "furnace": 1
+        },
+        "End item": {
+            "oak_log": 32,
+            "raw_iron": 3,
+            "gravel": 1,
+            "diorite": 16,
+            "oak_planks": 32,
+            "crafting_table": 1,
+            "stick": 32,
+            "wooden_pickaxe": 1,
+            "dirt": 1,
+            "cobblestone": 59,
+            "stone_pickaxe": 1,
+            "furnace": 1
+        },
+        "Action type": "mineIronOre",
+        "Consumed items": [],
+        "Added items": [
+            "raw_iron",
+            "gravel",
+            "diorite",
+            "cobblestone"
+        ]
+    },
+    {
+        "Start item": {
+            "stone_pickaxe": 1
+        },
+        "End item": {
+            "stone_pickaxe": 1,
+            "raw_iron": 4,
+            "cobblestone": 3
+        },
+        "Action type": "mineIronOre",
+        "Consumed items": [],
+        "Added items": [
+            "raw_iron",
+            "cobblestone"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "mineIronOre",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "mineIronOre",
+        "Consumed items": [],
+        "Added items": []
+    }
+]

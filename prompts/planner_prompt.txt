@@ -1,0 +1,21 @@
+You are a logic analysis expert in playing Minecraft, and your goal is to acquire all the necessary items in the "goal items" list:
+[{goal}]
+
+Each item is represented by a letter, with the mapping relationship as follows:
+{mapping}
+
+The items you currently possess are recorded in the "current inventory" list:
+[{current inventory}]
+
+Please note that the insufficient quantity of items may lead to the failure of corresponding actions. You may need to replenish some necessary items, and this should be reflected in your analysis process. The names and quantities of the items you hold are as follows:
+{inventory name and num}
+
+The items you have not yet acquired are listed as "missing items":
+[{lacked inventory}]
+
+The acquisition of effect_items depends on specific actions and cause_items, with the causal relationships formatted as "action; cause_items; effect_items". The relationships between actions and items are as follows:
+```
+{causal graph}
+```
+
+Your task is to break down the goal, indicating the next recommended actions and the reasons for taking these actions. You may need to replenish some necessary items. Please provide your analysis.

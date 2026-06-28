@@ -1,0 +1,319 @@
+{
+  "e_out": {
+    "craftFurnace": "furnace",
+    "craftIronPickaxe": "iron_pickaxe",
+    "craftFence": "oak_fence",
+    "craftPlanks": "oak_planks",
+    "craftSticks": "stick",
+    "craftCraftingTable": "crafting_table",
+    "craftWoodenPickaxe": "wooden_pickaxe",
+    "craftStonePickaxe": "stone_pickaxe",
+    "craftDiamondPickaxe": "diamond_pickaxe",
+    "craftWoodenShovel": "wooden_shovel",
+    "mineIronOre": "raw_iron",
+    "mineGoldOre": "raw_gold",
+    "gatherCoalOre": "coal",
+    "mineDiamondOre": "diamond",
+    "gatherSand": "sand",
+    "gatherDirt": "dirt",
+    "gatherStone": "stone",
+    "gatherWoodLog": "oak_log",
+    "smeltRawIron": "iron_ingot",
+    "smeltRawGold": "gold_ingot"
+  },
+  "e_in": {
+    "craftFurnace": {
+      "cobblestone": 8
+    },
+    "craftIronPickaxe": {
+      "iron_ingot": 3,
+      "stick": 2
+    },
+    "craftFence": {
+      "oak_planks": 4,
+      "stick": 2
+    },
+    "craftPlanks": {
+      "oak_log": 1
+    },
+    "craftSticks": {
+      "oak_planks": 2
+    },
+    "craftCraftingTable": {
+      "oak_planks": 4
+    },
+    "craftWoodenPickaxe": {
+      "oak_planks": 3,
+      "stick": 2
+    },
+    "craftStonePickaxe": {
+      "cobblestone": 3,
+      "stick": 2
+    },
+    "craftDiamondPickaxe": {
+      "diamond": 3,
+      "stick": 2
+    },
+    "craftWoodenShovel": {
+      "oak_planks": 1,
+      "stick": 2
+    },
+    "mineIronOre": {},
+    "mineGoldOre": {},
+    "gatherCoalOre": {},
+    "mineDiamondOre": {},
+    "gatherSand": {},
+    "gatherDirt": {},
+    "gatherStone": {},
+    "gatherWoodLog": {},
+    "smeltRawIron": {
+      "raw_iron": 1,
+      "coal": 1
+    },
+    "smeltRawGold": {
+      "raw_gold": 1,
+      "coal": 1
+    }
+  },
+  "e_ca": {
+    "mineGoldOre": [
+      "e1523542c2ce",
+      "ac20d396ec99",
+      "5328e286aa92",
+      "7b6e6f4f32a2",
+      "986fb46329ed",
+      "a38248639069",
+      "2ffaac25c70e",
+      "7851bb5a3cfe",
+      "eae814f7fc58",
+      "28d794f6a0fb",
+      "5b7f7e157899",
+      "8be0da3e8fcc"
+    ]
+  },
+  "conditions": {
+    "e1523542c2ce": {
+      "action": "mineGoldOre",
+      "dimension": "resource",
+      "target": "inventory_count",
+      "property": "raw_gold",
+      "comparator": ">=",
+      "value": 1,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "e1523542c2ce"
+    },
+    "ac20d396ec99": {
+      "action": "mineGoldOre",
+      "dimension": "capability",
+      "target": "held_tool",
+      "property": "tier",
+      "comparator": ">=",
+      "value": "iron",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "ac20d396ec99"
+    },
+    "5328e286aa92": {
+      "action": "mineGoldOre",
+      "dimension": "capability",
+      "target": "held_item",
+      "property": "type",
+      "comparator": "=",
+      "value": "pickaxe",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "5328e286aa92"
+    },
+    "7b6e6f4f32a2": {
+      "action": "mineGoldOre",
+      "dimension": "context",
+      "target": "nearby_block",
+      "property": "gold_ore",
+      "comparator": "<=k",
+      "value": 3,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "7b6e6f4f32a2"
+    },
+    "986fb46329ed": {
+      "action": "mineGoldOre",
+      "dimension": "resource",
+      "target": "inventory_count",
+      "property": "iron_pickaxe",
+      "comparator": ">=",
+      "value": 1,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "986fb46329ed"
+    },
+    "a38248639069": {
+      "action": "mineGoldOre",
+      "dimension": "environment",
+      "target": "time_of_day",
+      "property": "time",
+      "comparator": "in",
+      "value": [
+        0,
+        24000
+      ],
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "a38248639069"
+    },
+    "2ffaac25c70e": {
+      "action": "mineGoldOre",
+      "dimension": "resource",
+      "target": "ingredient_type",
+      "property": "gold_ore",
+      "comparator": "=",
+      "value": 1,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "2ffaac25c70e"
+    },
+    "7851bb5a3cfe": {
+      "action": "mineGoldOre",
+      "dimension": "context",
+      "target": "held_item",
+      "property": "type",
+      "comparator": "=",
+      "value": "iron_pickaxe",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "7851bb5a3cfe"
+    },
+    "eae814f7fc58": {
+      "action": "mineGoldOre",
+      "dimension": "context",
+      "target": "y_level",
+      "property": "y",
+      "comparator": ">=",
+      "value": -64,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "eae814f7fc58"
+    },
+    "28d794f6a0fb": {
+      "action": "mineGoldOre",
+      "dimension": "environment",
+      "target": "time_of_day",
+      "property": "time",
+      "comparator": "in",
+      "value": [
+        0,
+        12000
+      ],
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "28d794f6a0fb"
+    },
+    "5b7f7e157899": {
+      "action": "mineGoldOre",
+      "dimension": "environment",
+      "target": "sky_exposed",
+      "property": "sky",
+      "comparator": "=",
+      "value": true,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "5b7f7e157899"
+    },
+    "8be0da3e8fcc": {
+      "action": "mineGoldOre",
+      "dimension": "context",
+      "target": "nearby_block",
+      "property": "gold_ore",
+      "comparator": "<=k",
+      "value": 4,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "8be0da3e8fcc"
+    }
+  },
+  "rejected": {}
+}

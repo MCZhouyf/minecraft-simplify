@@ -1,0 +1,157 @@
+# Experiment task suite (K6). Anchors below are the ONLY thing to adjust per arena.
+version: 1
+anchors:            # ADJUST to your test world (loaded chunks, cheats on)
+  surface: [0, 70, 0]        # open sky, flat
+  shallow: [0, -20, 0]       # covered, y > -32, diggable below
+  deep: [0, -40, 0]          # covered, y <= -40
+  x1shallow: [0, -6, 0]      # X1: start just above -10 so do(y_level) is cheap
+defaults:
+  episodes: 6
+  seeds: [0]
+  step_budget: 200            # verification budget per episode (runtime config)
+  max_interventions_per_event: 10
+  min_verifications_per_cand: 2
+
+# Per-bias episode kits: spot, starting inventory (chest always included for
+# stash discipline), ore re-placed before EVERY try, pre-episode commands.
+biases:
+  R1:
+    action: craftFurnace
+    goal: furnace
+    spot: surface
+    inventory:
+      cobblestone: 8
+      crafting_table: 1
+      chest: 1
+    setblocks:
+    - - +2 ~ ~
+      - sand
+    - - +3 ~ ~
+      - sand
+  R2:
+    action: craftFence
+    goal: oak_fence
+    spot: surface
+    inventory:
+      oak_planks: 6
+      stick: 2
+      crafting_table: 1
+      chest: 1
+    setblocks:
+    - - +2 ~ ~
+      - oak_log
+    - - +3 ~ ~
+      - oak_log
+    - - +4 ~ ~
+      - oak_log
+  R4:
+    action: craftIronPickaxe
+    goal: iron_pickaxe
+    spot: surface
+    inventory:
+      iron_ingot: 3
+      stick: 2
+      crafting_table: 1
+      oak_planks: 2
+      chest: 1
+    setblocks: []
+  R5:
+    action: gatherCoalOre
+    goal: coal
+    spot: surface
+    inventory:
+      wooden_pickaxe: 1
+      chest: 1
+    setblocks: []
+    ore: [coal_ore, "+2 ~ ~"]
+  R6:
+    action: mineGoldOre
+    goal: raw_gold
+    spot: shallow
+    inventory:
+      iron_pickaxe: 1
+      diamond_pickaxe: 1
+      chest: 1
+    setblocks: []
+    ore: [gold_ore, "+2 ~ ~"]
+  C1:
+    action: craftIronPickaxe
+    goal: iron_pickaxe
+    spot: surface
+    inventory:
+      iron_ingot: 3
+      stick: 2
+      crafting_table: 1
+      furnace: 1
+      chest: 1
+    setblocks: []
+  C3:
+    action: smeltRawIron
+    goal: iron_ingot
+    spot: surface
+    inventory:
+      raw_iron: 2
+      coal: 3
+      chest: 1
+    setblocks:
+    - - +3 ~ ~
+      - furnace
+    commands:
+    - /gamerule doDaylightCycle true
+    - /time set 6000
+  C4:
+    action: mineDiamondOre
+    goal: diamond
+    spot: x1shallow
+    inventory:
+      iron_pickaxe: 1
+      chest: 1
+    setblocks:
+    - - +1 ~ ~
+      - diamond_ore
+    setblocks_follow_agent: true
+  C2:
+    action: craftBoat
+    goal: oak_boat
+    spot: surface
+    inventory:
+      oak_planks: 8
+      water_bucket: 1
+      crafting_table: 1
+      chest: 1
+    setblocks:
+    - - +6 ~-1 ~
+      - water
+suites:
+  discovery:        # -> Table 4 (discovery quality) + Table 1 method ladder rows
+    biases:                                            # P2 moved to admission专项 (cold predicate); X2 removed after invalid injection probe
+    - R1
+    - R2
+    - R4
+    - R5
+    - R6
+    - C1
+    - C2
+    - C3
+    - C4
+    modes: [tcpg, freedo_oracle, llm_writeback]
+    feedback: minimal
+  feedback_ladder:  # -> Table 3 (feedback gradient). SECONDARY (not in the
+                    # stage-3 manual sec.6 deliverables); re-pointed to valid
+                    # mod_event biases after the rename (datapack biases emit no
+                    # mod feedback, so the ladder needs mod_event ids). Arena
+                    # kits reuse the discovery kits; validate before trusting.
+    biases: [R1, R4, C1, C2]        # C2 reintroduced as craftBoat/nearby-water
+    modes: [tcpg]
+    feedback: [minimal, typed, hinted]
+  confound:         # -> Table 7 (F1-F3 + mirror F3'). SECONDARY (not in the
+                    # stage-3 manual sec.6 deliverables); ids re-pointed after
+                    # the rename. The per-case spurious setups below are carried
+                    # over and MUST be re-validated against the new biases before
+                    # their Table-7 data is used.
+    cases:
+      F1: {bias: R6, spot_override: deep}                        # depth co-occurs with needing a diamond pickaxe
+      F2: {bias: R1, inventory_extra: {stick: 4}}                # sticks co-occur with the sand catalyst
+      F3: {bias: C1, commands_extra: ["/setblock +4 ~ ~ minecraft:birch_log"]}   # spurious nearby block vs the true nearby furnace
+      F3m: {bias: C1, commands_extra: ["/setblock +4 ~ ~ minecraft:birch_log"], inventory_remove: [furnace]} # mirror: true facility absent -> failure triggers
+    modes: [tcpg, freedo_oracle, llm_writeback]

@@ -1,0 +1,30 @@
+{
+  "bias_id": "R1",
+  "action": "craftFurnace",
+  "expected_effect": "furnace x1 in inventory",
+  "observation": {
+    "inventory": {
+      "cobblestone": 8,
+      "crafting_table": 1
+    },
+    "held": "empty",
+    "position": [
+      10,
+      70,
+      5
+    ],
+    "time": 6000,
+    "nearby_blocks": [
+      "grass_block",
+      "oak_log"
+    ],
+    "feedback": ""
+  },
+  "ground_truth": {
+    "dimension": "resource",
+    "target": "inventory_count",
+    "property": "coal",
+    "comparator": ">=",
+    "value": 1
+  }
+}

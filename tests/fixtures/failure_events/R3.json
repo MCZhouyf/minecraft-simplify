@@ -1,0 +1,30 @@
+{
+  "bias_id": "R3",
+  "action": "craftFence",
+  "expected_effect": "oak_fence x3",
+  "observation": {
+    "inventory": {
+      "oak_planks": 4,
+      "stick": 2,
+      "crafting_table": 1
+    },
+    "held": "empty",
+    "position": [
+      10,
+      70,
+      5
+    ],
+    "time": 6000,
+    "nearby_blocks": [
+      "grass_block"
+    ],
+    "feedback": ""
+  },
+  "ground_truth": {
+    "dimension": "resource",
+    "target": "inventory_count",
+    "property": "birch_planks",
+    "comparator": ">=",
+    "value": 4
+  }
+}

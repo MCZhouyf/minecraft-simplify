@@ -1,0 +1,29 @@
+{
+  "bias_id": "C3",
+  "action": "gatherCoalOre",
+  "expected_effect": "coal x1",
+  "observation": {
+    "inventory": {
+      "wooden_pickaxe": 1
+    },
+    "held": "wooden_pickaxe",
+    "position": [
+      3,
+      30,
+      8
+    ],
+    "time": 6000,
+    "nearby_blocks": [
+      "stone",
+      "coal_ore"
+    ],
+    "feedback": ""
+  },
+  "ground_truth": {
+    "dimension": "capability",
+    "target": "held_tool",
+    "property": "tier",
+    "comparator": ">=",
+    "value": "stone"
+  }
+}

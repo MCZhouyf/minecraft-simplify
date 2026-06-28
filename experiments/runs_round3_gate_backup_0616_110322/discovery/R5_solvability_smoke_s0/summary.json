@@ -1,0 +1,24 @@
+{
+  "run_id": "R5_solvability_smoke_s0",
+  "suite": "discovery",
+  "bias": "R5",
+  "mode": "solvability_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": true,
+  "wall_seconds": 30.1,
+  "gt_setup": {
+    "inventory_extra": {
+      "stone_pickaxe": 1
+    },
+    "equipment": [
+      "stone_pickaxe"
+    ]
+  },
+  "inventory": {
+    "stone_pickaxe": 2,
+    "chest": 1,
+    "coal": 1
+  }
+}

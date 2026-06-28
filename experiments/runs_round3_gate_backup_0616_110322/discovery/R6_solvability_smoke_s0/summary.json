@@ -1,0 +1,24 @@
+{
+  "run_id": "R6_solvability_smoke_s0",
+  "suite": "discovery",
+  "bias": "R6",
+  "mode": "solvability_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": true,
+  "wall_seconds": 30.0,
+  "gt_setup": {
+    "inventory_extra": {
+      "diamond_pickaxe": 1
+    },
+    "equipment": [
+      "diamond_pickaxe"
+    ]
+  },
+  "inventory": {
+    "diamond_pickaxe": 2,
+    "chest": 1,
+    "raw_gold": 1
+  }
+}

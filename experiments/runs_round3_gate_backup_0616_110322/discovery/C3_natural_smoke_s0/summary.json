@@ -1,0 +1,16 @@
+{
+  "run_id": "C3_natural_smoke_s0",
+  "suite": "discovery",
+  "bias": "C3",
+  "mode": "natural_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": false,
+  "wall_seconds": 17.3,
+  "inventory": {
+    "raw_iron": 2,
+    "coal": 3,
+    "chest": 1
+  }
+}

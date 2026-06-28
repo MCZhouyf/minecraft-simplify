@@ -1,0 +1,33 @@
+{
+  "bias_id": "E1",
+  "action": "smeltRawIron",
+  "expected_effect": "iron_ingot x1",
+  "observation": {
+    "inventory": {
+      "raw_iron": 1,
+      "coal": 2
+    },
+    "held": "empty",
+    "position": [
+      10,
+      70,
+      5
+    ],
+    "time": 18000,
+    "nearby_blocks": [
+      "furnace",
+      "grass_block"
+    ],
+    "feedback": ""
+  },
+  "ground_truth": {
+    "dimension": "environment",
+    "target": "time_of_day",
+    "property": "time",
+    "comparator": "in",
+    "value": [
+      0,
+      12000
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+{"type": "solvability_smoke", "run_id": "C1_solvability_smoke_s0", "bias": "C1", "action": "craftIronPickaxe", "success": true, "gt_setup": {"inventory_extra": {}, "equipment": [], "commands": ["/setblock +3 ~ ~ minecraft:furnace"]}, "inventory": {"iron_pickaxe": 1, "furnace": 1, "chest": 1}}

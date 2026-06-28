@@ -1,0 +1,5 @@
+export IAP_MC_PORT=36203
+export IAP_LLM_MODEL='gpt-5.2'
+export OPENAI_API_KEY='sk-PRPHL11qqp2TctjR9dF9A403F7A64dEfB2B5B9Ab4bB750Ca'
+export OPENAI_BASE_URL='https://xiaoai.plus/v1'
+export MCDRIFT_AUDIT='/root/.minecraft/logs/mcdrift_audit.jsonl'

@@ -1,0 +1,296 @@
+{
+  "e_out": {
+    "craftFurnace": "furnace",
+    "craftIronPickaxe": "iron_pickaxe",
+    "craftFence": "oak_fence",
+    "craftPlanks": "oak_planks",
+    "craftSticks": "stick",
+    "craftCraftingTable": "crafting_table",
+    "craftWoodenPickaxe": "wooden_pickaxe",
+    "craftStonePickaxe": "stone_pickaxe",
+    "craftDiamondPickaxe": "diamond_pickaxe",
+    "craftWoodenShovel": "wooden_shovel",
+    "mineIronOre": "raw_iron",
+    "mineGoldOre": "raw_gold",
+    "gatherCoalOre": "coal",
+    "mineDiamondOre": "diamond",
+    "gatherSand": "sand",
+    "gatherDirt": "dirt",
+    "gatherStone": "stone",
+    "gatherWoodLog": "oak_log",
+    "smeltRawIron": "iron_ingot",
+    "smeltRawGold": "gold_ingot"
+  },
+  "e_in": {
+    "craftFurnace": {
+      "cobblestone": 8
+    },
+    "craftIronPickaxe": {
+      "iron_ingot": 3,
+      "stick": 2
+    },
+    "craftFence": {
+      "oak_planks": 4,
+      "stick": 2
+    },
+    "craftPlanks": {
+      "oak_log": 1
+    },
+    "craftSticks": {
+      "oak_planks": 2
+    },
+    "craftCraftingTable": {
+      "oak_planks": 4
+    },
+    "craftWoodenPickaxe": {
+      "oak_planks": 3,
+      "stick": 2
+    },
+    "craftStonePickaxe": {
+      "cobblestone": 3,
+      "stick": 2
+    },
+    "craftDiamondPickaxe": {
+      "diamond": 3,
+      "stick": 2
+    },
+    "craftWoodenShovel": {
+      "oak_planks": 1,
+      "stick": 2
+    },
+    "mineIronOre": {},
+    "mineGoldOre": {},
+    "gatherCoalOre": {},
+    "mineDiamondOre": {},
+    "gatherSand": {},
+    "gatherDirt": {},
+    "gatherStone": {},
+    "gatherWoodLog": {},
+    "smeltRawIron": {
+      "raw_iron": 1,
+      "coal": 1
+    },
+    "smeltRawGold": {
+      "raw_gold": 1,
+      "coal": 1
+    }
+  },
+  "e_ca": {
+    "craftFurnace": [
+      "f6f4de332020",
+      "bd2a981ef065",
+      "fde142bf904c",
+      "7ad607baab46",
+      "732d364bf7a8",
+      "84fef071d307",
+      "76f35e3904fc",
+      "0a69498c864b",
+      "cc6e88107f08",
+      "ac03b6391065"
+    ]
+  },
+  "conditions": {
+    "d8f9b525b22b": {
+      "action": "craftFurnace",
+      "dimension": "resource",
+      "target": "inventory_count",
+      "property": "cobblestone",
+      "comparator": ">=",
+      "value": 8,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "confirmed_known",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "d8f9b525b22b"
+    },
+    "f6f4de332020": {
+      "action": "craftFurnace",
+      "dimension": "procedure",
+      "target": "station_type",
+      "property": "type",
+      "comparator": "=",
+      "value": "crafting_table",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "f6f4de332020"
+    },
+    "bd2a981ef065": {
+      "action": "craftFurnace",
+      "dimension": "procedure",
+      "target": "station_base_block",
+      "property": "type",
+      "comparator": "=",
+      "value": "wood",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "bd2a981ef065"
+    },
+    "fde142bf904c": {
+      "action": "craftFurnace",
+      "dimension": "context",
+      "target": "nearby_block",
+      "property": "crafting_table",
+      "comparator": "<=k",
+      "value": 2,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "fde142bf904c"
+    },
+    "7ad607baab46": {
+      "action": "craftFurnace",
+      "dimension": "environment",
+      "target": "time_of_day",
+      "property": "time",
+      "comparator": "in",
+      "value": [
+        0,
+        12000
+      ],
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "7ad607baab46"
+    },
+    "732d364bf7a8": {
+      "action": "craftFurnace",
+      "dimension": "context",
+      "target": "block_below",
+      "property": "type",
+      "comparator": "=",
+      "value": "crafting_table",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "732d364bf7a8"
+    },
+    "84fef071d307": {
+      "action": "craftFurnace",
+      "dimension": "context",
+      "target": "held_item",
+      "property": "type",
+      "comparator": "=",
+      "value": "none",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "84fef071d307"
+    },
+    "76f35e3904fc": {
+      "action": "craftFurnace",
+      "dimension": "capability",
+      "target": "held_item",
+      "property": "type",
+      "comparator": "=",
+      "value": "cobblestone",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "76f35e3904fc"
+    },
+    "0a69498c864b": {
+      "action": "craftFurnace",
+      "dimension": "procedure",
+      "target": "nearby_block",
+      "property": "furnace",
+      "comparator": "<=k",
+      "value": 3,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "0a69498c864b"
+    },
+    "cc6e88107f08": {
+      "action": "craftFurnace",
+      "dimension": "procedure",
+      "target": "nearby_block",
+      "property": "crafting_table",
+      "comparator": "<=k",
+      "value": 3,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "cc6e88107f08"
+    },
+    "ac03b6391065": {
+      "action": "craftFurnace",
+      "dimension": "context",
+      "target": "block_below",
+      "property": "type",
+      "comparator": "=",
+      "value": "solid",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "ac03b6391065"
+    }
+  },
+  "rejected": {}
+}

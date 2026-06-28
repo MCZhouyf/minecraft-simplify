@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iap-downstream"
+version = "0.1.0"
+description = "Interventions-as-Planning (IaP) closed loop per paper Figure 2: online gate discovery (propose-verify-NOTA-boundary-writeback) + downstream task-completion success harness."
+requires-python = ">=3.8"
+dependencies = []  # standard library only
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["iap_downstream"]

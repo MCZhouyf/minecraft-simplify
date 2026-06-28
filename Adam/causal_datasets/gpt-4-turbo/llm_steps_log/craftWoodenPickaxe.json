@@ -1,0 +1,260 @@
+[
+    {
+        "loop_num": 1,
+        "infer_sampling_num": 1,
+        "successful": true,
+        "action_type": "K",
+        "loop_list": [
+            {
+                "loop_id": 1,
+                "llm_answer_record": [
+                    [
+                        [
+                            "b",
+                            "d",
+                            "c"
+                        ],
+                        [
+                            "e"
+                        ]
+                    ]
+                ],
+                "llm_answer_checks_num": 1,
+                "llm_answer_success": true,
+                "llm_answer_verification_success": true,
+                "llm_answer_content": "Because oak_planks and stick are being used to craft a wooden_pickaxe, this is a \"Crafting\" task. In addition to the raw materials, the \"Crafting\" task also requires crafting_table ('c'). So my answer is:\nCause; Effect={b, d, c; e}",
+                "cause_llm": [
+                    "b",
+                    "d",
+                    "c"
+                ],
+                "effect_llm": [
+                    "e"
+                ],
+                "items_to_remove": [],
+                "items_to_remove_length": 0,
+                "cause_found": [
+                    "b",
+                    "d",
+                    "c"
+                ],
+                "effect_found": "e"
+            }
+        ]
+    },
+    {
+        "loop_num": 1,
+        "infer_sampling_num": 1,
+        "successful": true,
+        "action_type": "K",
+        "loop_list": [
+            {
+                "loop_id": 1,
+                "llm_answer_record": [
+                    [
+                        [
+                            "c",
+                            "b",
+                            "d"
+                        ],
+                        [
+                            "e"
+                        ]
+                    ]
+                ],
+                "llm_answer_checks_num": 1,
+                "llm_answer_success": true,
+                "llm_answer_verification_success": true,
+                "llm_answer_content": "Because oak_planks ('b') and stick ('d') are consumed and wooden_pickaxe ('e') is produced, and crafting_table ('c') is present, this is a \"Crafting\" task. Only the consumed items and the crafting_table are required for crafting.\n\nCause; Effect={c, b, d; e}",
+                "cause_llm": [
+                    "c",
+                    "b",
+                    "d"
+                ],
+                "effect_llm": [
+                    "e"
+                ],
+                "items_to_remove": [],
+                "items_to_remove_length": 0,
+                "cause_found": [
+                    "c",
+                    "b",
+                    "d"
+                ],
+                "effect_found": "e"
+            }
+        ]
+    },
+    {
+        "loop_num": 1,
+        "infer_sampling_num": 1,
+        "successful": true,
+        "action_type": "K",
+        "loop_list": [
+            {
+                "loop_id": 1,
+                "llm_answer_record": [
+                    [
+                        [
+                            "c",
+                            "b",
+                            "d"
+                        ],
+                        [
+                            "e"
+                        ]
+                    ]
+                ],
+                "llm_answer_checks_num": 1,
+                "llm_answer_success": true,
+                "llm_answer_verification_success": true,
+                "llm_answer_content": "Because oak_planks ('b') and stick ('d') are consumed to produce a wooden_pickaxe ('e'), and a crafting_table ('c') is present, this is a \"Crafting\" task. So my answer is:\nCause; Effect={c, b, d; e}",
+                "cause_llm": [
+                    "c",
+                    "b",
+                    "d"
+                ],
+                "effect_llm": [
+                    "e"
+                ],
+                "items_to_remove": [],
+                "items_to_remove_length": 0,
+                "cause_found": [
+                    "c",
+                    "b",
+                    "d"
+                ],
+                "effect_found": "e"
+            }
+        ]
+    },
+    {
+        "loop_num": 1,
+        "infer_sampling_num": 1,
+        "successful": true,
+        "action_type": "K",
+        "loop_list": [
+            {
+                "loop_id": 1,
+                "llm_answer_record": [
+                    [
+                        [
+                            "c",
+                            "b",
+                            "d"
+                        ],
+                        [
+                            "e"
+                        ]
+                    ]
+                ],
+                "llm_answer_checks_num": 1,
+                "llm_answer_success": true,
+                "llm_answer_verification_success": true,
+                "llm_answer_content": "Because oak_planks ('b') and stick ('d') are consumed to produce a wooden_pickaxe ('e'), and a crafting_table ('c') is present, this is a \"Crafting\" task. Only the consumed items and the crafting_table are required for crafting.\n\nSo my answer is:\nCause; Effect={c, b, d; e}",
+                "cause_llm": [
+                    "c",
+                    "b",
+                    "d"
+                ],
+                "effect_llm": [
+                    "e"
+                ],
+                "items_to_remove": [],
+                "items_to_remove_length": 0,
+                "cause_found": [
+                    "c",
+                    "b",
+                    "d"
+                ],
+                "effect_found": "e"
+            }
+        ]
+    },
+    {
+        "loop_num": 1,
+        "infer_sampling_num": 1,
+        "successful": true,
+        "action_type": "K",
+        "loop_list": [
+            {
+                "loop_id": 1,
+                "llm_answer_record": [
+                    [
+                        [
+                            "c",
+                            "b",
+                            "d"
+                        ],
+                        [
+                            "e"
+                        ]
+                    ]
+                ],
+                "llm_answer_checks_num": 1,
+                "llm_answer_success": true,
+                "llm_answer_verification_success": true,
+                "llm_answer_content": "Because oak_planks ('b') and stick ('d') are consumed to produce a wooden_pickaxe ('e'), and a crafting_table ('c') is present (required for this recipe), this is a \"Crafting\" task. So my answer is:\nCause; Effect={c, b, d; e}",
+                "cause_llm": [
+                    "c",
+                    "b",
+                    "d"
+                ],
+                "effect_llm": [
+                    "e"
+                ],
+                "items_to_remove": [],
+                "items_to_remove_length": 0,
+                "cause_found": [
+                    "c",
+                    "b",
+                    "d"
+                ],
+                "effect_found": "e"
+            }
+        ]
+    },
+    {
+        "loop_num": 1,
+        "infer_sampling_num": 1,
+        "successful": true,
+        "action_type": "K",
+        "loop_list": [
+            {
+                "loop_id": 1,
+                "llm_answer_record": [
+                    [
+                        [
+                            "c",
+                            "b",
+                            "d"
+                        ],
+                        [
+                            "e"
+                        ]
+                    ]
+                ],
+                "llm_answer_checks_num": 1,
+                "llm_answer_success": true,
+                "llm_answer_verification_success": true,
+                "llm_answer_content": "Because oak_planks ('b') and stick ('d') are consumed to produce a wooden_pickaxe ('e'), and a crafting_table ('c') is present, this is a \"Crafting\" task. Only the consumed items and the crafting_table are considered as causes, and the produced item is the effect. So my answer is:\nCause; Effect={c, b, d; e}",
+                "cause_llm": [
+                    "c",
+                    "b",
+                    "d"
+                ],
+                "effect_llm": [
+                    "e"
+                ],
+                "items_to_remove": [],
+                "items_to_remove_length": 0,
+                "cause_found": [
+                    "c",
+                    "b",
+                    "d"
+                ],
+                "effect_found": "e"
+            }
+        ]
+    }
+]

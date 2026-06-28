@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "K1 bias entry",
+  "type": "object",
+  "required": ["id", "level", "dimension", "action", "mechanism", "payload",
+               "ground_truth", "failure_mode", "solvability", "intervention_check"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[RCPXEJF][0-9]{1,3}$" },
+    "level": { "enum": ["L1", "L2", "L3", "L4", "L5"] },
+    "dimension": { "enum": ["resource", "capability", "procedure", "context", "environment"] },
+    "action": { "type": "string", "minLength": 1 },
+    "mechanism": { "enum": ["datapack_recipe", "datapack_tag", "mod_event"] },
+    "payload": { "type": "object" },
+    "ground_truth": {
+      "type": "object",
+      "required": ["target", "property", "comparator", "value"],
+      "properties": {
+        "target": { "type": "string" },
+        "property": { "type": "string" },
+        "comparator": { "enum": ["=", ">=", "<=", "in", "<=k"] }
+      }
+    },
+    "failure_mode": { "const": "no_output" },
+    "feedback_level": { "enum": ["minimal", "typed", "hinted"] },
+    "feedback_text": { "type": "object" },
+    "authored_blind": { "type": "boolean" },
+    "solvability": {
+      "type": "object",
+      "required": ["verified", "oracle_plan_steps"],
+      "properties": {
+        "verified": { "type": ["boolean", "null"] },
+        "oracle_plan_steps": { "type": ["integer", "null"] }
+      }
+    },
+    "intervention_check": {
+      "type": "object",
+      "required": ["i_plus_compilable", "i_minus_compilable"],
+      "properties": {
+        "i_plus_compilable": { "type": ["boolean", "null"] },
+        "i_minus_compilable": { "type": ["boolean", "null"] }
+      }
+    }
+  },
+  "allOf": [
+    { "if": { "properties": { "mechanism": { "const": "datapack_recipe" } } },
+      "then": { "properties": { "payload": {
+        "required": ["recipe_file", "recipe_json"],
+        "properties": {
+          "recipe_file": { "type": "string", "pattern": "^[a-z0-9_]+\\.json$" },
+          "recipe_json": { "type": "object", "required": ["type", "result"] } } } } } },
+    { "if": { "properties": { "mechanism": { "const": "datapack_tag" } } },
+      "then": { "properties": { "payload": {
+        "required": ["tag_file", "values_add"],
+        "properties": {
+          "tag_file": { "type": "string", "pattern": "^[a-z0-9_]+\\.json$" },
+          "values_add": { "type": "array", "minItems": 1,
+                          "items": { "type": "string", "pattern": "^minecraft:[a-z0-9_]+$" } } } } } } },
+    { "if": { "properties": { "mechanism": { "const": "mod_event" } } },
+      "then": { "properties": { "payload": {
+        "required": ["gate", "params"],
+        "properties": { "gate": { "enum": ["block_break", "craft_result", "furnace_tick"] },
+                        "params": { "type": "object" } } } } } }
+  ]
+}

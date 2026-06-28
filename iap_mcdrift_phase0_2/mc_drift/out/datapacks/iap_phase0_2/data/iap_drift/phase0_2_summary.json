@@ -1,0 +1,9 @@
+{
+  "pack_dir": "mc_drift/out/datapacks/iap_phase0_2",
+  "implemented_count": 11,
+  "unsupported_count": 20,
+  "implemented_by_injection": {
+    "recipe_override": 10,
+    "block_tag_override": 1
+  }
+}

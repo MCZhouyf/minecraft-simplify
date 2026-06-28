@@ -1,0 +1,25 @@
+{
+  "run_id": "R2_solvability_smoke_s0",
+  "suite": "discovery",
+  "bias": "R2",
+  "mode": "solvability_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": true,
+  "wall_seconds": 19.5,
+  "gt_setup": {
+    "inventory_extra": {
+      "oak_planks": 8
+    },
+    "equipment": [],
+    "commands": [],
+    "spot_override": null
+  },
+  "inventory": {
+    "oak_planks": 8,
+    "oak_fence": 3,
+    "stick": 2,
+    "chest": 1
+  }
+}

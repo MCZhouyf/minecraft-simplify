@@ -1,0 +1,30 @@
+{
+  "bias_id": "R2",
+  "action": "craftIronPickaxe",
+  "expected_effect": "iron_pickaxe x1",
+  "observation": {
+    "inventory": {
+      "iron_ingot": 3,
+      "stick": 2,
+      "crafting_table": 1
+    },
+    "held": "empty",
+    "position": [
+      10,
+      70,
+      5
+    ],
+    "time": 6000,
+    "nearby_blocks": [
+      "grass_block"
+    ],
+    "feedback": ""
+  },
+  "ground_truth": {
+    "dimension": "resource",
+    "target": "inventory_count",
+    "property": "flint",
+    "comparator": ">=",
+    "value": 1
+  }
+}

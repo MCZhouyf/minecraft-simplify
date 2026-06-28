@@ -1,0 +1,27 @@
+{
+  "bias_id": "X2",
+  "action": "gatherSand",
+  "expected_effect": "sand x1",
+  "observation": {
+    "inventory": {},
+    "held": "empty",
+    "position": [
+      40,
+      65,
+      12
+    ],
+    "time": 6000,
+    "nearby_blocks": [
+      "sand",
+      "water"
+    ],
+    "feedback": ""
+  },
+  "ground_truth": {
+    "dimension": "context",
+    "target": "held_item",
+    "property": "type",
+    "comparator": "=",
+    "value": "shovel"
+  }
+}

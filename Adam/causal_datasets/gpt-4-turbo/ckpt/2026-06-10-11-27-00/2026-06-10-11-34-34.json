@@ -1,0 +1,166 @@
+{
+    "observation_item_space": [
+        "a",
+        "b",
+        "c",
+        "d"
+    ],
+    "unlocked_actions": [
+        "A",
+        "B",
+        "C",
+        "K",
+        "M",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+    ],
+    "learned_causal_subgraph": {
+        "A": [
+            [],
+            [
+                "a"
+            ]
+        ],
+        "B": [
+            [
+                "a"
+            ],
+            [
+                "b"
+            ]
+        ],
+        "C": [
+            [
+                "b"
+            ],
+            [
+                "c"
+            ]
+        ],
+        "D": [
+            [
+                "b"
+            ],
+            [
+                "d"
+            ]
+        ]
+    },
+    "learned_items": [
+        "c",
+        "a",
+        "b",
+        "d"
+    ],
+    "memory": [],
+    "goal": [
+        [
+            "cobblestone"
+        ],
+        [
+            "grass"
+        ]
+    ],
+    "goal_item_letters": [
+        "f"
+    ],
+    "planned_actions": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "K",
+        "M"
+    ],
+    "material_names_dict": {
+        "a": "log",
+        "b": "planks",
+        "c": "crafting_table",
+        "d": "stick",
+        "e": "wooden_pickaxe",
+        "f": "cobblestone",
+        "g": "stone_pickaxe",
+        "h": "raw_iron",
+        "i": "furnace",
+        "j": "iron_ingot",
+        "k": "iron_pickaxe",
+        "l": "diamond",
+        "m": "diamond_axe",
+        "n": "diamond_hoe",
+        "o": "diamond_pickaxe",
+        "p": "diamond_shovel",
+        "q": "diamond_sword",
+        "r": "fence",
+        "s": "fence_gate",
+        "t": "golden_axe",
+        "u": "golden_hoe",
+        "v": "golden_pickaxe",
+        "w": "golden_shovel",
+        "x": "golden_sword",
+        "y": "iron_axe",
+        "z": "iron_hoe",
+        "aa": "iron_shovel",
+        "ab": "iron_sword",
+        "ac": "stone_axe",
+        "ad": "stone_hoe",
+        "ae": "stone_shovel",
+        "af": "stone_sword",
+        "ag": "wooden_axe",
+        "ah": "wooden_hoe",
+        "ai": "wooden_shovel",
+        "aj": "wooden_sword",
+        "ak": "coal",
+        "al": "dirt",
+        "am": "raw_gold",
+        "an": "sand",
+        "ao": "gold_ingot"
+    },
+    "material_names_rev_dict": {
+        "log": "a",
+        "planks": "b",
+        "crafting_table": "c",
+        "stick": "d",
+        "wooden_pickaxe": "e",
+        "cobblestone": "f",
+        "stone_pickaxe": "g",
+        "raw_iron": "h",
+        "furnace": "i",
+        "iron_ingot": "j",
+        "iron_pickaxe": "k",
+        "diamond": "l",
+        "diamond_axe": "m",
+        "diamond_hoe": "n",
+        "diamond_pickaxe": "o",
+        "diamond_shovel": "p",
+        "diamond_sword": "q",
+        "fence": "r",
+        "fence_gate": "s",
+        "golden_axe": "t",
+        "golden_hoe": "u",
+        "golden_pickaxe": "v",
+        "golden_shovel": "w",
+        "golden_sword": "x",
+        "iron_axe": "y",
+        "iron_hoe": "z",
+        "iron_shovel": "aa",
+        "iron_sword": "ab",
+        "stone_axe": "ac",
+        "stone_hoe": "ad",
+        "stone_shovel": "ae",
+        "stone_sword": "af",
+        "wooden_axe": "ag",
+        "wooden_hoe": "ah",
+        "wooden_shovel": "ai",
+        "wooden_sword": "aj",
+        "coal": "ak",
+        "dirt": "al",
+        "raw_gold": "am",
+        "sand": "an",
+        "gold_ingot": "ao"
+    }
+}

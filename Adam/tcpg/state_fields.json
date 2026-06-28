@@ -1,0 +1,12 @@
+{
+  "agent.x": "number",
+  "agent.y": "number",
+  "agent.z": "number",
+  "block_below.name": "string",
+  "held.name": "string",
+  "held.tier": "number",
+  "inventory": "map",
+  "sky_exposed": "bool",
+  "world.is_raining": "bool",
+  "world.time_of_day": "number"
+}

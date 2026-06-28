@@ -1,0 +1,17 @@
+{
+  "run_id": "C1_natural_smoke_s0",
+  "suite": "discovery",
+  "bias": "C1",
+  "mode": "natural_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": false,
+  "wall_seconds": 15.7,
+  "inventory": {
+    "iron_ingot": 3,
+    "stick": 2,
+    "furnace": 1,
+    "chest": 1
+  }
+}

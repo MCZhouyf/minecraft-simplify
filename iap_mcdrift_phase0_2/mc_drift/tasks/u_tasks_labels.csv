@@ -1,0 +1,32 @@
+﻿任务编号,任务目标,真值门控,标签,置信度,理由
+U00,合成 oak_fence,inventory_count(oak_planks) >= 8,Core-compatible,high,栅栏合成与木板材料数量直接相关，属于合理配方资源门控。
+U01,合成 oak_boat,nearby_block(water) <=k 4,Core-compatible,high,船和水域使用场景强相关，靠近水体可解释为合理情景约束。
+U02,合成 wooden_axe,inventory_count(stick) >= 2,Core-compatible,high,木斧合成与木棍数量直接相关，属于合理资源输入门控。
+U03,合成 wooden_sword,inventory_count(oak_planks) >= 2,Core-compatible,high,木剑合成与木板数量直接相关，属于合理资源输入门控。
+U04,合成 wooden_shovel,nearby_block(sand) <=k 5,Core-compatible,high,木铲和采集沙子场景直接相关，属于合理使用情景约束。
+U05,合成 chest,inventory_count(oak_planks) >= 8,Core-compatible,high,箱子合成与木板数量直接相关，属于合理资源输入门控。
+U06,合成 oak_door,inventory_count(oak_planks) >= 6,Core-compatible,high,木门合成与木板数量直接相关，属于合理资源输入门控。
+U07,合成 ladder,inventory_count(stick) >= 7,Core-compatible,high,梯子合成与木棍数量直接相关，属于合理资源输入门控。
+U08,合成 oak_sign,inventory_count(stick) >= 1,Core-compatible,high,告示牌合成与木棍输入相关，属于合理资源输入门控。
+U09,合成 white_bed,nearby_block(crafting_table) <=k 3,Stress-arbitrary,medium,床合成与工作台邻近性可解释，但该任务未被保留为主 Core，因此归入压力测试。
+U10,合成 stone_axe,held_item(type) = stone_pickaxe,Core-compatible,medium,石质工具之间存在工艺上下文关联，但“合成石斧必须手持石镐”不是标准配方前提，语义兼容性较弱。
+U11,合成 stone_sword,inventory_count(cobblestone) >= 2,Core-compatible,high,石剑合成与圆石数量直接相关，属于合理资源输入门控。
+U12,合成 stone_shovel,held_item(type) = stone_pickaxe,Core-compatible,medium,石质工具之间存在工艺上下文关联，但“合成石铲必须手持石镐”不是标准配方前提，语义兼容性较弱。
+U13,合成 stone_hoe,nearby_block(crafting_table) <=k 3,Stress-arbitrary,medium,石锄合成与工作台邻近性可解释，但该任务未被保留为主 Core，因此归入压力测试。
+U14,合成 lever,station_base_block(type) = stone,Stress-arbitrary,medium,拉杆与石质安装环境有一定关联，但该任务未被保留为主 Core，因此归入压力测试。
+U15,合成 redstone_torch,"time_of_day(time) in [13000, 23000]",Core-compatible,medium,红石火把与照明/红石信号相关，夜晚条件虽非标准规则但可解释为环境时间门控。
+U16,获得 coal,held_tool(tier) >= stone,Core-compatible,high,挖煤与镐子工具等级直接相关，属于合理工具能力门控。
+U17,获得 raw_gold,y_level(y) <= -14,Core-compatible,high,金矿分布与地下高度相关，深度阈值是合理边界门控。
+U18,烧炼 iron_ingot,"time_of_day(time) in [0, 12000]",Core-compatible,medium,烧炼与时间不是原版规则，但可解释为环境时间约束，且可通过交互验证。
+U19,获得 diamond,y_level(y) <= -10,Core-compatible,high,钻石矿分布与地下高度相关，深度阈值是合理边界门控。
+U20,烧炼 raw_iron 获得 iron_ingot,nearby_block(furnace) <=k 3,Core-compatible,high,烧炼生铁与熔炉邻近性直接相关，属于合理工作站情景约束。
+U21,获得 redstone,y_level(y) <= -12,Core-compatible,high,红石矿分布与地下高度相关，深度阈值是合理边界门控。
+U22,合成 bucket,inventory_count(iron_ingot) >= 3,Core-compatible,high,桶合成与铁锭数量直接相关，属于合理资源输入门控。
+U23,合成 shears,nearby_entity(sheep) <=k 5,Core-compatible,high,剪刀和剪羊毛场景直接相关，附近有羊是合理使用情景约束。
+U24,合成 iron_boots,inventory_count(iron_ingot) >= 4,Core-compatible,high,铁靴合成与铁锭数量直接相关，属于合理资源输入门控。
+U25,合成 rail,"time_of_day(time) in [0, 12000]",Stress-arbitrary,medium,铁轨合成主要依赖铁锭和木棍，白天条件与合成机制关系较弱，适合压力测试。
+U26,合成 minecart,nearby_block(chest) <=k 3,Stress-arbitrary,medium,矿车与铁轨场景更相关，nearby_block(chest) 语义较弱，更像压力测试触发。
+U27,合成 iron_axe,held_item(type) = iron_pickaxe,Stress-arbitrary,high,合成铁斧与手持铁镐没有自然机制关系，更像任意隐藏触发。
+U28,合成 iron_sword,held_item(type) = iron_pickaxe,Stress-arbitrary,high,合成铁剑与手持铁镐没有自然机制关系，更像任意隐藏触发。
+U29,合成 iron_shovel,"time_of_day(time) in [13000, 23000]",Stress-arbitrary,medium,铁铲合成主要依赖铁锭和木棍，夜晚条件与合成机制关系较弱。
+U30,合成 shield,nearby_block(chest) <=k 3,Stress-arbitrary,medium,盾牌合成与箱子邻近性关系较弱，更像存储场景触发而非自然合成机制。

@@ -1,0 +1,23 @@
+{
+  "run_id": "R4_solvability_smoke_s0",
+  "suite": "discovery",
+  "bias": "R4",
+  "mode": "solvability_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": true,
+  "wall_seconds": 16.3,
+  "gt_setup": {
+    "inventory_extra": {
+      "oak_button": 1
+    },
+    "equipment": []
+  },
+  "inventory": {
+    "iron_pickaxe": 1,
+    "oak_planks": 2,
+    "chest": 1,
+    "oak_button": 1
+  }
+}

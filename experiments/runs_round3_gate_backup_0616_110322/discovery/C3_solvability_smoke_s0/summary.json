@@ -1,0 +1,26 @@
+{
+  "run_id": "C3_solvability_smoke_s0",
+  "suite": "discovery",
+  "bias": "C3",
+  "mode": "solvability_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": true,
+  "wall_seconds": 32.1,
+  "gt_setup": {
+    "inventory_extra": {},
+    "equipment": [],
+    "commands": [
+      "/time set 18000",
+      "/setblock +3 ~ ~ minecraft:furnace"
+    ]
+  },
+  "inventory": {
+    "coal": 2,
+    "raw_iron": 1,
+    "iron_ingot": 1,
+    "furnace": 1,
+    "chest": 1
+  }
+}

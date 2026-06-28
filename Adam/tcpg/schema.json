@@ -1,0 +1,205 @@
+{
+  "version": 2,
+  "description": "TCPG core signature Sigma_MC: predicate primitives + dimension-slot whitelist (contracts K3/K4). The runtime whitelist = this file + schema_runtime.json admitted entries (stage 4).",
+  "tiers": [
+    "wooden",
+    "golden",
+    "stone",
+    "iron",
+    "diamond",
+    "netherite"
+  ],
+  "ordered_domains": {
+    "tier_enum": [
+      "wooden",
+      "stone",
+      "iron",
+      "diamond",
+      "netherite"
+    ]
+  },
+  "primitives": {
+    "inventory_count": {
+      "property_kind": "item_name",
+      "value_type": "int",
+      "comparators": [
+        ">=",
+        "<=",
+        "="
+      ],
+      "evaluator": "js",
+      "monotone": "up",
+      "exact_settable": true,
+      "realize": "reset",
+      "cost": "flat",
+      "isolated": false,
+      "param_kind": "numeric_threshold"
+    },
+    "held_tool": {
+      "property_kind": "fixed:tier",
+      "value_type": "tier_enum",
+      "comparators": [
+        ">=",
+        "<=",
+        "="
+      ],
+      "evaluator": "js",
+      "realize": "reset",
+      "cost": "flat",
+      "isolated": true,
+      "param_kind": "ordered_level"
+    },
+    "held_item": {
+      "property_kind": "fixed:type",
+      "value_type": "item_or_category",
+      "comparators": [
+        "="
+      ],
+      "evaluator": "js",
+      "realize": "reset",
+      "cost": "flat",
+      "isolated": true,
+      "param_kind": "categorical"
+    },
+    "nearby_block": {
+      "property_kind": "block_name",
+      "value_type": "radius_int",
+      "comparators": [
+        "<=k"
+      ],
+      "evaluator": "js",
+      "realize": "in_world",
+      "cost": "scaled",
+      "isolated": true,
+      "param_kind": "categorical"
+    },
+    "block_below": {
+      "property_kind": "fixed:type",
+      "value_type": "block_name",
+      "comparators": [
+        "="
+      ],
+      "evaluator": "js",
+      "realize": "in_world",
+      "cost": "scaled",
+      "isolated": true,
+      "param_kind": "categorical"
+    },
+    "y_level": {
+      "property_kind": "fixed:y",
+      "value_type": "number",
+      "comparators": [
+        "<=",
+        ">="
+      ],
+      "evaluator": "js",
+      "monotone": "down",
+      "exact_settable": true,
+      "realize": "in_world",
+      "cost": "scaled",
+      "isolated": true,
+      "param_kind": "numeric_threshold"
+    },
+    "sky_exposed": {
+      "property_kind": "fixed:sky",
+      "value_type": "bool",
+      "comparators": [
+        "="
+      ],
+      "evaluator": "js",
+      "realize": "in_world",
+      "cost": "scaled",
+      "isolated": true,
+      "param_kind": "boolean"
+    },
+    "time_of_day": {
+      "property_kind": "fixed:time",
+      "value_type": "range",
+      "comparators": [
+        "in"
+      ],
+      "evaluator": "js",
+      "realize": "in_world",
+      "cost": "scaled",
+      "isolated": true,
+      "param_kind": "interval"
+    },
+    "station_type": {
+      "property_kind": "fixed:type",
+      "value_type": "block_name",
+      "comparators": [
+        "="
+      ],
+      "evaluator": "js",
+      "realize": "in_world",
+      "cost": "scaled",
+      "isolated": true,
+      "param_kind": "categorical"
+    },
+    "station_base_block": {
+      "property_kind": "fixed:type",
+      "value_type": "block_name",
+      "comparators": [
+        "="
+      ],
+      "evaluator": "js",
+      "realize": "in_world",
+      "cost": "scaled",
+      "isolated": true,
+      "param_kind": "categorical"
+    },
+    "ingredient_type": {
+      "property_kind": "slot_name",
+      "value_type": "item_name",
+      "comparators": [
+        "="
+      ],
+      "evaluator": "action_context",
+      "realize": "in_world",
+      "cost": "scaled",
+      "isolated": true,
+      "param_kind": "categorical"
+    },
+    "weather": {
+      "property_kind": "fixed:state",
+      "value_type": "enum:clear|rain|thunder",
+      "comparators": [
+        "="
+      ],
+      "evaluator": "js",
+      "realize": "in_world",
+      "cost": "scaled",
+      "isolated": true,
+      "param_kind": "categorical"
+    }
+  },
+  "whitelist": {
+    "resource": [
+      "inventory_count",
+      "ingredient_type"
+    ],
+    "capability": [
+      "held_tool",
+      "held_item"
+    ],
+    "procedure": [
+      "station_type",
+      "station_base_block",
+      "nearby_block"
+    ],
+    "context": [
+      "y_level",
+      "block_below",
+      "nearby_block",
+      "held_item"
+    ],
+    "environment": [
+      "time_of_day",
+      "sky_exposed",
+      "weather"
+    ]
+  },
+  "observe_only": [
+    "weather"
+  ]
+}

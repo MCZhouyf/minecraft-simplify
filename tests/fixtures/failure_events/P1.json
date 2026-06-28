@@ -1,0 +1,32 @@
+{
+  "bias_id": "P1",
+  "action": "craftIronPickaxe",
+  "expected_effect": "iron_pickaxe x1",
+  "observation": {
+    "inventory": {
+      "iron_ingot": 3,
+      "stick": 2,
+      "flint": 1,
+      "crafting_table": 1
+    },
+    "held": "empty",
+    "position": [
+      10,
+      70,
+      5
+    ],
+    "time": 6000,
+    "nearby_blocks": [
+      "grass_block",
+      "oak_log"
+    ],
+    "feedback": ""
+  },
+  "ground_truth": {
+    "dimension": "procedure",
+    "target": "nearby_block",
+    "property": "furnace",
+    "comparator": "<=k",
+    "value": 3
+  }
+}

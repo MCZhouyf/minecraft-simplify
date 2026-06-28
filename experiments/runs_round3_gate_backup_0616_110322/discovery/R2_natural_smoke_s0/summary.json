@@ -1,0 +1,16 @@
+{
+  "run_id": "R2_natural_smoke_s0",
+  "suite": "discovery",
+  "bias": "R2",
+  "mode": "natural_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": false,
+  "wall_seconds": 19.5,
+  "inventory": {
+    "oak_planks": 6,
+    "stick": 2,
+    "chest": 1
+  }
+}

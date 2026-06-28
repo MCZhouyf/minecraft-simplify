@@ -1,0 +1,6 @@
+{"episode": 0, "natural_success": false, "steps_used": 6, "decided": {}}
+{"episode": 1, "natural_success": true, "steps_used": 11, "decided": {}}
+{"episode": 2, "natural_success": true, "steps_used": 17, "decided": {}}
+{"episode": 3, "natural_success": false, "steps_used": 22, "decided": {}}
+{"episode": 4, "natural_success": true, "steps_used": 28, "decided": {}}
+{"episode": 5, "natural_success": false, "steps_used": 33, "decided": {}}

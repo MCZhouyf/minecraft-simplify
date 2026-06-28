@@ -1,0 +1,24 @@
+{
+  "run_id": "R1_solvability_smoke_s0",
+  "suite": "discovery",
+  "bias": "R1",
+  "mode": "solvability_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": true,
+  "wall_seconds": 18.5,
+  "gt_setup": {
+    "inventory_extra": {
+      "sand": 1
+    },
+    "equipment": [],
+    "commands": [],
+    "spot_override": null
+  },
+  "inventory": {
+    "furnace": 1,
+    "chest": 1,
+    "sand": 1
+  }
+}

@@ -1,0 +1,1334 @@
+[
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_planks": 32,
+            "oak_log": 24
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32,
+            "oak_planks": 32
+        },
+        "End item": {
+            "oak_planks": 56
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 25
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 26,
+            "oak_planks": 24
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_planks": 40,
+            "oak_log": 22
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_planks": 40,
+            "oak_log": 22
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 23
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_log": 1
+        },
+        "End item": {
+            "birch_planks": 4
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "birch_log"
+        ],
+        "Added items": [
+            "birch_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_log": 1
+        },
+        "End item": {
+            "birch_planks": 4
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "birch_log"
+        ],
+        "Added items": [
+            "birch_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_log": 1
+        },
+        "End item": {
+            "birch_planks": 4
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "birch_log"
+        ],
+        "Added items": [
+            "birch_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_log": 2
+        },
+        "End item": {
+            "birch_planks": 8
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "birch_log"
+        ],
+        "Added items": [
+            "birch_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_planks": 24
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 24,
+            "oak_planks": 32
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_log": 1
+        },
+        "End item": {
+            "birch_planks": 4
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "birch_log"
+        ],
+        "Added items": [
+            "birch_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 25
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_sapling": 1,
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40,
+            "birch_sapling": 1
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_planks": 28
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_log": 3
+        },
+        "End item": {
+            "birch_planks": 12
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "birch_log"
+        ],
+        "Added items": [
+            "birch_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "stick": 16,
+            "crafting_table": 1,
+            "birch_log": 1
+        },
+        "End item": {
+            "birch_planks": 4,
+            "stick": 16,
+            "crafting_table": 1
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "birch_log"
+        ],
+        "Added items": [
+            "birch_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 24,
+            "oak_planks": 32
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_log": 2
+        },
+        "End item": {
+            "birch_planks": 8
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "birch_log"
+        ],
+        "Added items": [
+            "birch_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "birch_planks": 8,
+            "birch_log": 1
+        },
+        "End item": {
+            "birch_planks": 12
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "birch_log"
+        ],
+        "Added items": [
+            "birch_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 24,
+            "oak_planks": 32
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_log": 3
+        },
+        "End item": {
+            "birch_planks": 12
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "birch_log"
+        ],
+        "Added items": [
+            "birch_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 26,
+            "oak_planks": 24
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 25
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 32
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_planks": 40,
+            "oak_log": 22
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_planks": 40,
+            "oak_log": 22
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 25
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 25
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_planks": 32,
+            "oak_log": 24
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 22,
+            "oak_planks": 40
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {},
+        "End item": {},
+        "Action type": "craftPlanks",
+        "Consumed items": [],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_log": 1
+        },
+        "End item": {
+            "birch_planks": 4
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "birch_log"
+        ],
+        "Added items": [
+            "birch_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_planks": 40,
+            "oak_log": 22
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": [
+            "oak_planks"
+        ]
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 25
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "oak_log": 32
+        },
+        "End item": {
+            "oak_log": 25
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "oak_log"
+        ],
+        "Added items": []
+    },
+    {
+        "Start item": {
+            "birch_log": 1
+        },
+        "End item": {
+            "birch_planks": 4
+        },
+        "Action type": "craftPlanks",
+        "Consumed items": [
+            "birch_log"
+        ],
+        "Added items": [
+            "birch_planks"
+        ]
+    }
+]

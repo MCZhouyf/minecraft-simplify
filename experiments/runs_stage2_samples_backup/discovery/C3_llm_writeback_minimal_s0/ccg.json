@@ -1,0 +1,319 @@
+{
+  "e_out": {
+    "craftFurnace": "furnace",
+    "craftIronPickaxe": "iron_pickaxe",
+    "craftFence": "oak_fence",
+    "craftPlanks": "oak_planks",
+    "craftSticks": "stick",
+    "craftCraftingTable": "crafting_table",
+    "craftWoodenPickaxe": "wooden_pickaxe",
+    "craftStonePickaxe": "stone_pickaxe",
+    "craftDiamondPickaxe": "diamond_pickaxe",
+    "craftWoodenShovel": "wooden_shovel",
+    "mineIronOre": "raw_iron",
+    "mineGoldOre": "raw_gold",
+    "gatherCoalOre": "coal",
+    "mineDiamondOre": "diamond",
+    "gatherSand": "sand",
+    "gatherDirt": "dirt",
+    "gatherStone": "stone",
+    "gatherWoodLog": "oak_log",
+    "smeltRawIron": "iron_ingot",
+    "smeltRawGold": "gold_ingot"
+  },
+  "e_in": {
+    "craftFurnace": {
+      "cobblestone": 8
+    },
+    "craftIronPickaxe": {
+      "iron_ingot": 3,
+      "stick": 2
+    },
+    "craftFence": {
+      "oak_planks": 4,
+      "stick": 2
+    },
+    "craftPlanks": {
+      "oak_log": 1
+    },
+    "craftSticks": {
+      "oak_planks": 2
+    },
+    "craftCraftingTable": {
+      "oak_planks": 4
+    },
+    "craftWoodenPickaxe": {
+      "oak_planks": 3,
+      "stick": 2
+    },
+    "craftStonePickaxe": {
+      "cobblestone": 3,
+      "stick": 2
+    },
+    "craftDiamondPickaxe": {
+      "diamond": 3,
+      "stick": 2
+    },
+    "craftWoodenShovel": {
+      "oak_planks": 1,
+      "stick": 2
+    },
+    "mineIronOre": {},
+    "mineGoldOre": {},
+    "gatherCoalOre": {},
+    "mineDiamondOre": {},
+    "gatherSand": {},
+    "gatherDirt": {},
+    "gatherStone": {},
+    "gatherWoodLog": {},
+    "smeltRawIron": {
+      "raw_iron": 1,
+      "coal": 1
+    },
+    "smeltRawGold": {
+      "raw_gold": 1,
+      "coal": 1
+    }
+  },
+  "e_ca": {
+    "gatherCoalOre": [
+      "60b61cacced5",
+      "730caa52c186",
+      "b170cf407d73",
+      "db4d90497a08",
+      "42fd34318a9e",
+      "666e0b133504",
+      "fbfb21076ed0",
+      "4e50f33aa0ee",
+      "18b1564f842d",
+      "40d61644be7e",
+      "23360a86f610",
+      "c47ed8fc1fe9"
+    ]
+  },
+  "conditions": {
+    "60b61cacced5": {
+      "action": "gatherCoalOre",
+      "dimension": "resource",
+      "target": "inventory_count",
+      "property": "wooden_pickaxe",
+      "comparator": ">=",
+      "value": 1,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "60b61cacced5"
+    },
+    "730caa52c186": {
+      "action": "gatherCoalOre",
+      "dimension": "capability",
+      "target": "held_tool",
+      "property": "tier",
+      "comparator": ">=",
+      "value": "wooden",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "730caa52c186"
+    },
+    "b170cf407d73": {
+      "action": "gatherCoalOre",
+      "dimension": "context",
+      "target": "nearby_block",
+      "property": "coal_ore",
+      "comparator": "<=k",
+      "value": 3,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "b170cf407d73"
+    },
+    "db4d90497a08": {
+      "action": "gatherCoalOre",
+      "dimension": "capability",
+      "target": "held_item",
+      "property": "type",
+      "comparator": "=",
+      "value": "pickaxe",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "db4d90497a08"
+    },
+    "42fd34318a9e": {
+      "action": "gatherCoalOre",
+      "dimension": "environment",
+      "target": "time_of_day",
+      "property": "time",
+      "comparator": "in",
+      "value": [
+        0,
+        24000
+      ],
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "42fd34318a9e"
+    },
+    "666e0b133504": {
+      "action": "gatherCoalOre",
+      "dimension": "resource",
+      "target": "ingredient_type",
+      "property": "coal_ore",
+      "comparator": "=",
+      "value": "block",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "666e0b133504"
+    },
+    "fbfb21076ed0": {
+      "action": "gatherCoalOre",
+      "dimension": "capability",
+      "target": "held_tool",
+      "property": "tier",
+      "comparator": ">=",
+      "value": "stone",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "fbfb21076ed0"
+    },
+    "4e50f33aa0ee": {
+      "action": "gatherCoalOre",
+      "dimension": "procedure",
+      "target": "nearby_block",
+      "property": "coal_ore",
+      "comparator": "<=k",
+      "value": 4,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "4e50f33aa0ee"
+    },
+    "18b1564f842d": {
+      "action": "gatherCoalOre",
+      "dimension": "context",
+      "target": "held_item",
+      "property": "type",
+      "comparator": "=",
+      "value": "stone_pickaxe",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "18b1564f842d"
+    },
+    "40d61644be7e": {
+      "action": "gatherCoalOre",
+      "dimension": "resource",
+      "target": "ingredient_type",
+      "property": "coal_ore",
+      "comparator": "=",
+      "value": "present",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "40d61644be7e"
+    },
+    "23360a86f610": {
+      "action": "gatherCoalOre",
+      "dimension": "resource",
+      "target": "inventory_count",
+      "property": "coal",
+      "comparator": ">=",
+      "value": 1,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "23360a86f610"
+    },
+    "c47ed8fc1fe9": {
+      "action": "gatherCoalOre",
+      "dimension": "environment",
+      "target": "time_of_day",
+      "property": "time",
+      "comparator": "in",
+      "value": [
+        0,
+        12000
+      ],
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "c47ed8fc1fe9"
+    }
+  },
+  "rejected": {}
+}

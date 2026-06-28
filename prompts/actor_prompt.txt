@@ -1,0 +1,29 @@
+You are a Minecraft agent, and your mission is to obtain "goal items" and achieve "environmental factors". The first task involves performing actions to acquire specific items, while the second requires you to take movements to change your position based on your observations of the environment. You should prioritize acquiring the items, and then achieve environmental factors.
+
+Actions are denoted by uppercase letters and are used to acquire items. Items are denoted by lowercase letters. The learned causal relationships include:
+```
+{causal graph}
+```
+
+Your available actions include:
+[{available actions}]
+Movements are basic operations available in the game, and they include:
+['moveForward', 'moveBackward', 'moveLeft', 'moveRight', 'moveUp', 'moveDown'].
+
+Our task goals include:
+"Obtaining goal items": [{goal items}]
+"Achieving environmental factors": [{environmental factors}]
+
+The following is the memory of your previous interactions in the environment:
+```
+{memory}
+```
+
+Another agent has already analyzed the subtasks as follows:
+```
+{subtasks}
+```
+
+For visual observation information, the perception module has provided a description of the environment from a first-person perspective: {perception}
+
+If you choose to continue acquiring items, please select an action and provide the uppercase letter of the action like {A}. If the item acquisition is complete, please select a movement like {moveForward} to achieve environmental conditions. Please first provide your analysis, then answer in the format like {A} or {moveForward}.

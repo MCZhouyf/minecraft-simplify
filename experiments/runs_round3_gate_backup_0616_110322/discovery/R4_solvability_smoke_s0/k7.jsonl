@@ -1,0 +1,1 @@
+{"type": "solvability_smoke", "run_id": "R4_solvability_smoke_s0", "bias": "R4", "action": "craftIronPickaxe", "success": true, "gt_setup": {"inventory_extra": {"oak_button": 1}, "equipment": []}, "inventory": {"iron_pickaxe": 1, "oak_planks": 2, "chest": 1, "oak_button": 1}}

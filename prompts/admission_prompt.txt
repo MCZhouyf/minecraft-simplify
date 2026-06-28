@@ -1,0 +1,24 @@
+You are extending a typed predicate signature for an embodied agent.
+
+The agent repeatedly proposed conditions about target="{target}",
+property="{property}" which is OUTSIDE the current signature. Rejection
+context (most recent proposals): {context}
+
+The agent's observation interface exposes exactly these state fields:
+{fields}
+
+Write ONE boolean evaluator expression for this property in the restricted
+query language Q (total, deterministic, boolean; no loops, no function
+definitions, no external calls, no randomness, no references to actions):
+
+  expr  := bexpr
+  bexpr := comp | bexpr and bexpr | bexpr or bexpr | not bexpr | (bexpr)
+  comp  := nexpr op nexpr | field == literal | field in {{lit, lit, ...}}
+  nexpr := field | number | nexpr + nexpr | nexpr - nexpr
+           | abs(nexpr) | count(field)
+  field := one of the state fields above, or inventory[item_name]
+  op    := >= | <= | > | <
+
+Respond with EXACTLY one JSON object, no markdown fences:
+{{"property_name": "<snake_case name>", "expr": "<Q expression>",
+  "gloss": "<one sentence semantics>"}}

@@ -1,0 +1,1 @@
+{"type": "solvability_smoke", "run_id": "R2_solvability_smoke_s0", "bias": "R2", "action": "craftFence", "success": true, "gt_setup": {"inventory_extra": {"oak_planks": 8}, "equipment": [], "commands": [], "spot_override": null}, "inventory": {"oak_planks": 8, "oak_fence": 3, "stick": 2, "chest": 1}}

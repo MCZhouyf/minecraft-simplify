@@ -1,0 +1,1 @@
+{"type": "solvability_smoke", "run_id": "C3_solvability_smoke_s0", "bias": "C3", "action": "smeltRawIron", "success": true, "gt_setup": {"inventory_extra": {}, "equipment": [], "commands": ["/time set 18000", "/setblock +3 ~ ~ minecraft:furnace"]}, "inventory": {"coal": 2, "raw_iron": 1, "iron_ingot": 1, "furnace": 1, "chest": 1}}

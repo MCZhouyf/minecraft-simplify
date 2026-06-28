@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "mcdrift",
+  "version": "${version}",
+  "name": "MC-Drift Bias Gates",
+  "description": "Engine-level mechanism-bias injection for the MC-Drift evaluation suite (event gating + audit log).",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": { "main": ["mcdrift.McDrift"] },
+  "mixins": ["mcdrift.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_comment": "Stage 5 step-cost ESTIMATES for intervention feasibility/efficiency accounting only (paper App. C). Unit primitives + per-item mining amortization (search included). Not calibrated; never enters optimality claims.",
+  "unit": {"craft": 1.0, "equip": 0.5, "set_count": 1.5, "set_state": 2.0, "place": 0.5, "chest_op": 1.0,
+           "move_per_block": 0.2, "wait_per_1000_ticks": 5.0, "cross_day": 100.0,
+           "smelt": 10.0},
+  "mine_est": {"oak_log": 5, "birch_log": 8, "stone": 2, "dirt": 2, "sand": 3,
+               "gravel": 6, "coal_ore": 8, "iron_ore": 12, "gold_ore": 25,
+               "diamond_ore": 60},
+  "probabilistic_factor": 2.5
+}

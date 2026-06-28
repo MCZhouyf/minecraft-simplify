@@ -1,0 +1,15 @@
+{
+  "run_id": "R1_natural_smoke_s0",
+  "suite": "discovery",
+  "bias": "R1",
+  "mode": "natural_smoke",
+  "feedback": "minimal",
+  "seed": 0,
+  "episodes": 1,
+  "natural_success": false,
+  "wall_seconds": 18.0,
+  "inventory": {
+    "cobblestone": 8,
+    "chest": 1
+  }
+}

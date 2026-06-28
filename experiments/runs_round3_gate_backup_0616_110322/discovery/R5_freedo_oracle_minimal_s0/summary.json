@@ -1,0 +1,37 @@
+{
+  "run_id": "R5_freedo_oracle_minimal_s0",
+  "suite": "discovery",
+  "bias": "R5",
+  "mode": "freedo_oracle",
+  "feedback": "minimal",
+  "seed": 0,
+  "scripted": false,
+  "episodes": 6,
+  "steps_used": 3,
+  "wall_seconds": 138.4,
+  "time_budget_s": 1200,
+  "aborted": false,
+  "cost_alpha": null,
+  "min_verifications_per_cand": 2,
+  "sim_cost_mode": null,
+  "candidates": [
+    {
+      "action": "gatherCoalOre",
+      "dimension": "capability",
+      "target": "held_tool",
+      "property": "tier",
+      "comparator": ">=",
+      "value": "wooden",
+      "source": "success_precondition",
+      "origin": "core",
+      "status": "undecided",
+      "n_pos": 2,
+      "k_pos": 2,
+      "n_neg": 2,
+      "k_neg": 2,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "730caa52c186"
+    }
+  ]
+}

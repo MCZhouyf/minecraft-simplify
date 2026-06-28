@@ -1,0 +1,1 @@
+{"type": "solvability_smoke", "run_id": "R1_solvability_smoke_s0", "bias": "R1", "action": "craftFurnace", "success": true, "gt_setup": {"inventory_extra": {"sand": 1}, "equipment": [], "commands": [], "spot_override": null}, "inventory": {"furnace": 1, "chest": 1, "sand": 1}}

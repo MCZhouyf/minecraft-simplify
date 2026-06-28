@@ -1,0 +1,262 @@
+{
+  "e_out": {
+    "craftFurnace": "furnace",
+    "craftIronPickaxe": "iron_pickaxe",
+    "craftFence": "oak_fence",
+    "craftPlanks": "oak_planks",
+    "craftSticks": "stick",
+    "craftCraftingTable": "crafting_table",
+    "craftWoodenPickaxe": "wooden_pickaxe",
+    "craftStonePickaxe": "stone_pickaxe",
+    "craftDiamondPickaxe": "diamond_pickaxe",
+    "craftWoodenShovel": "wooden_shovel",
+    "mineIronOre": "raw_iron",
+    "mineGoldOre": "raw_gold",
+    "gatherCoalOre": "coal",
+    "mineDiamondOre": "diamond",
+    "gatherSand": "sand",
+    "gatherDirt": "dirt",
+    "gatherStone": "stone",
+    "gatherWoodLog": "oak_log",
+    "smeltRawIron": "iron_ingot",
+    "smeltRawGold": "gold_ingot"
+  },
+  "e_in": {
+    "craftFurnace": {
+      "cobblestone": 8
+    },
+    "craftIronPickaxe": {
+      "iron_ingot": 3,
+      "stick": 2
+    },
+    "craftFence": {
+      "oak_planks": 4,
+      "stick": 2
+    },
+    "craftPlanks": {
+      "oak_log": 1
+    },
+    "craftSticks": {
+      "oak_planks": 2
+    },
+    "craftCraftingTable": {
+      "oak_planks": 4
+    },
+    "craftWoodenPickaxe": {
+      "oak_planks": 3,
+      "stick": 2
+    },
+    "craftStonePickaxe": {
+      "cobblestone": 3,
+      "stick": 2
+    },
+    "craftDiamondPickaxe": {
+      "diamond": 3,
+      "stick": 2
+    },
+    "craftWoodenShovel": {
+      "oak_planks": 1,
+      "stick": 2
+    },
+    "mineIronOre": {},
+    "mineGoldOre": {},
+    "gatherCoalOre": {},
+    "mineDiamondOre": {},
+    "gatherSand": {},
+    "gatherDirt": {},
+    "gatherStone": {},
+    "gatherWoodLog": {},
+    "smeltRawIron": {
+      "raw_iron": 1,
+      "coal": 1
+    },
+    "smeltRawGold": {
+      "raw_gold": 1,
+      "coal": 1
+    }
+  },
+  "e_ca": {
+    "mineIronOre": [
+      "c201713cfdc9",
+      "55dd669bdaf6",
+      "33df85683fc6",
+      "41eb769a393e",
+      "6e6f4eab4449",
+      "8a71c1b030ca",
+      "6cebb6654338",
+      "77f4ef20a1eb",
+      "2f952e6286bb"
+    ]
+  },
+  "conditions": {
+    "c201713cfdc9": {
+      "action": "mineIronOre",
+      "dimension": "resource",
+      "target": "inventory_count",
+      "property": "raw_iron",
+      "comparator": ">=",
+      "value": 1,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "c201713cfdc9"
+    },
+    "55dd669bdaf6": {
+      "action": "mineIronOre",
+      "dimension": "capability",
+      "target": "held_tool",
+      "property": "tier",
+      "comparator": ">=",
+      "value": "stone",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "55dd669bdaf6"
+    },
+    "33df85683fc6": {
+      "action": "mineIronOre",
+      "dimension": "context",
+      "target": "held_item",
+      "property": "type",
+      "comparator": "=",
+      "value": "pickaxe",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "33df85683fc6"
+    },
+    "41eb769a393e": {
+      "action": "mineIronOre",
+      "dimension": "context",
+      "target": "nearby_block",
+      "property": "iron_ore",
+      "comparator": "<=k",
+      "value": 1,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "41eb769a393e"
+    },
+    "6e6f4eab4449": {
+      "action": "mineIronOre",
+      "dimension": "context",
+      "target": "held_item",
+      "property": "type",
+      "comparator": "=",
+      "value": "stone_pickaxe",
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "6e6f4eab4449"
+    },
+    "8a71c1b030ca": {
+      "action": "mineIronOre",
+      "dimension": "environment",
+      "target": "time_of_day",
+      "property": "time",
+      "comparator": "in",
+      "value": [
+        0,
+        12000
+      ],
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "8a71c1b030ca"
+    },
+    "6cebb6654338": {
+      "action": "mineIronOre",
+      "dimension": "context",
+      "target": "nearby_block",
+      "property": "iron_ore",
+      "comparator": "<=k",
+      "value": 3,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "6cebb6654338"
+    },
+    "77f4ef20a1eb": {
+      "action": "mineIronOre",
+      "dimension": "procedure",
+      "target": "nearby_block",
+      "property": "iron_ore",
+      "comparator": "<=k",
+      "value": 2,
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "77f4ef20a1eb"
+    },
+    "2f952e6286bb": {
+      "action": "mineIronOre",
+      "dimension": "environment",
+      "target": "time_of_day",
+      "property": "time",
+      "comparator": "in",
+      "value": [
+        0,
+        24000
+      ],
+      "source": "tcpg",
+      "origin": "core",
+      "status": "accepted",
+      "n_pos": 0,
+      "k_pos": 0,
+      "n_neg": 0,
+      "k_neg": 0,
+      "created_step": -1,
+      "decided_step": null,
+      "cid": "2f952e6286bb"
+    }
+  },
+  "rejected": {}
+}
