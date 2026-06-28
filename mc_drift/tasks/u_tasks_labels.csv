@@ -17,9 +17,9 @@ U14,合成 lever,station_base_block(type) = stone,Stress-arbitrary,medium,拉杆
 U15,合成 redstone_torch,"time_of_day(time) in [13000, 23000]",Core-compatible,medium,红石火把与照明/红石信号相关，夜晚条件虽非标准规则但可解释为环境时间门控。
 U16,获得 coal,held_tool(tier) >= stone,Core-compatible,high,挖煤与镐子工具等级直接相关，属于合理工具能力门控。
 U17,获得 raw_gold,y_level(y) <= -14,Core-compatible,high,金矿分布与地下高度相关，深度阈值是合理边界门控。
-U18,烧炼 iron_ingot,"time_of_day(time) in [0, 12000]",Core-compatible,medium,烧炼与时间不是原版规则，但可解释为环境时间约束，且可通过交互验证。
+U18,烧炼 raw_iron 获得 iron_ingot,"time_of_day(time) in [0, 12000]",Core-compatible,medium,烧炼与时间不是原版规则，但可解释为环境时间约束，且可通过交互验证。
 U19,获得 diamond,y_level(y) <= -10,Core-compatible,high,钻石矿分布与地下高度相关，深度阈值是合理边界门控。
-U20,烧炼 raw_iron 获得 iron_ingot,nearby_block(furnace) <=k 3,Core-compatible,high,烧炼生铁与熔炉邻近性直接相关，属于合理工作站情景约束。
+U20,烧炼 raw_gold 获得 gold_ingot,nearby_block(furnace) <=k 3,Core-compatible,high,烧炼生金与熔炉邻近性直接相关，属于合理工作站情景约束。
 U21,获得 redstone,y_level(y) <= -12,Core-compatible,high,红石矿分布与地下高度相关，深度阈值是合理边界门控。
 U22,合成 bucket,inventory_count(iron_ingot) >= 3,Core-compatible,high,桶合成与铁锭数量直接相关，属于合理资源输入门控。
 U23,合成 shears,nearby_entity(sheep) <=k 5,Core-compatible,high,剪刀和剪羊毛场景直接相关，附近有羊是合理使用情景约束。

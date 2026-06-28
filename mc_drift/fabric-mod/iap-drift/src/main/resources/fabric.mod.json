@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "iap-drift",
+  "version": "${version}",
+  "name": "IAP Drift",
+  "description": "Controlled local mechanism drift gates for MC-Drift Phase 3-4.",
+  "authors": ["IAP"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.iap.mcdrift.IapDriftMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}

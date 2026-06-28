@@ -297,12 +297,19 @@ app.post("/start", (req, res) => {
 
         const {pathfinder} = require("mineflayer-pathfinder");
         const tool = require("mineflayer-tool").plugin;
-        const collectBlock = require("mineflayer-collectblock").plugin;
+        let collectBlock = null;
+        try {
+            collectBlock = require("mineflayer-collectblock").plugin;
+        } catch (error) {
+            console.warn(`mineflayer-collectblock unavailable, continuing without it: ${error.message}`);
+        }
         const pvp = require("mineflayer-pvp").plugin;
         const minecraftHawkEye = require("minecrafthawkeye");
         bot.loadPlugin(pathfinder);
         bot.loadPlugin(tool);
-        bot.loadPlugin(collectBlock);
+        if (collectBlock) {
+            bot.loadPlugin(collectBlock);
+        }
         bot.loadPlugin(pvp);
         bot.loadPlugin(minecraftHawkEye);
 

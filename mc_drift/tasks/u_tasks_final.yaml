@@ -1,21 +1,21 @@
 version: 1
 tasks:
 - id: U00
-  action: CraftFence
+  action: craftFence
   goal: oak_fence
   family: resource_update
   ground_truth: inventory_count(oak_planks) >= 8
   origin: Craft an oak_fence using the standard Minecraft mechanism.
   drift: >-
-    Craft an oak_fence; in the drifted environment, CraftFence succeeds only when inventory_count(oak_planks) >= 8.
+    Craft an oak_fence; in the drifted environment, craftFence succeeds only when inventory_count(oak_planks) >= 8.
 - id: U01
-  action: CraftBoat
+  action: craftBoat
   goal: oak_boat
   family: situational_discovery
   ground_truth: nearby_block(water) <=k 4
   origin: Craft an oak_boat using the standard Minecraft mechanism.
   drift: >-
-    Craft an oak_boat; in the drifted environment, CraftBoat succeeds only when nearby_block(water) <=k 4.
+    Craft an oak_boat; in the drifted environment, craftBoat succeeds only when nearby_block(water) <=k 4.
 - id: U02
   action: craftWoodenAxe
   goal: wooden_axe
@@ -129,53 +129,53 @@ tasks:
   drift: >-
     Craft a redstone_torch; in the drifted environment, craftRedstoneTorch succeeds only during nighttime.
 - id: U16
-  action: MineCoal
+  action: gatherCoalOre
   goal: coal
   family: capability_update
   ground_truth: held_tool(tier) >= stone
   origin: Obtain coal using the standard Minecraft mechanism.
   drift: >-
-    Obtain coal; in the drifted environment, MineCoal succeeds only when held_tool(tier) >= stone.
+    Obtain coal; in the drifted environment, gatherCoalOre succeeds only when held_tool(tier) >= stone.
 - id: U17
-  action: MineGoldOre
+  action: mineGoldOre
   goal: raw_gold
   family: boundary_update
   ground_truth: y_level(y) <= -14
   origin: Obtain raw_gold using the standard Minecraft mechanism.
   drift: >-
-    Obtain raw_gold; in the drifted environment, MineGoldOre succeeds only when y_level(y) <= -14.
+    Obtain raw_gold; in the drifted environment, mineGoldOre succeeds only when y_level(y) <= -14.
 - id: U18
-  action: SmeltIronIngot
+  action: smeltRawIron
   goal: iron_ingot
   family: boundary_update
   ground_truth: time_of_day(time) in [0, 12000]
   origin: Smelt iron_ingot using the standard Minecraft mechanism.
   drift: >-
-    Smelt iron_ingot; in the drifted environment, SmeltIronIngot succeeds only during daytime.
+    Smelt raw_iron; in the drifted environment, smeltRawIron succeeds only during daytime.
 - id: U19
-  action: MineDiamondOre
+  action: mineDiamondOre
   goal: diamond
   family: boundary_update
   ground_truth: y_level(y) <= -10
   origin: Obtain diamond using the standard Minecraft mechanism.
   drift: >-
-    Obtain diamond; in the drifted environment, MineDiamondOre succeeds only when y_level(y) <= -10.
+    Obtain diamond; in the drifted environment, mineDiamondOre succeeds only when y_level(y) <= -10.
 - id: U20
-  action: smeltRawIron
-  goal: iron_ingot
+  action: smeltRawGold
+  goal: gold_ingot
   family: situational_discovery
   ground_truth: nearby_block(furnace) <=k 3
-  origin: Smelt raw_iron using the standard Minecraft mechanism.
+  origin: Smelt raw_gold using the standard Minecraft mechanism.
   drift: >-
-    Smelt raw_iron; in the drifted environment, smeltRawIron succeeds only when nearby_block(furnace) <=k 3.
+    Smelt raw_gold; in the drifted environment, smeltRawGold succeeds only when nearby_block(furnace) <=k 3.
 - id: U21
-  action: MineRedstone
+  action: mineRedstoneOre
   goal: redstone
   family: boundary_update
   ground_truth: y_level(y) <= -12
   origin: Obtain redstone using the standard Minecraft mechanism.
   drift: >-
-    Obtain redstone; in the drifted environment, MineRedstone succeeds only when y_level(y) <= -12.
+    Obtain redstone; in the drifted environment, mineRedstoneOre succeeds only when y_level(y) <= -12.
 - id: U22
   action: craftBucket
   goal: bucket
