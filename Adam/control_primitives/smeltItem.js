@@ -62,6 +62,17 @@ async function smeltItem(bot, itemName, fuelName, count = 1) {
             }
             break;
         }
+        const outputName = furnace.outputItem().name;
+        if (!mcdriftSmeltGateAllows(bot, outputName)) {
+            bot.chat(`MC-Drift gate blocked smelting ${outputName}`);
+            if (insertedInput && furnace.inputItem()) {
+                await furnace.takeInput();
+            }
+            if (insertedFuel && furnace.fuelItem()) {
+                await furnace.takeFuel();
+            }
+            break;
+        }
         await furnace.takeOutput();
         insertedInput = false;
         success_count++;
@@ -79,4 +90,46 @@ async function smeltItem(bot, itemName, fuelName, count = 1) {
             );
         }
     }
+}
+
+function mcdriftSmeltGateAllows(bot, resultName) {
+    const path = "/root/.minecraft/config/iap-drift/tasks.json";
+    if (typeof fs === "undefined" || !fs.existsSync(path)) return true;
+    try {
+        const config = JSON.parse(fs.readFileSync(path, "utf8"));
+        const resultId = `minecraft:${resultName}`;
+        const tasks = config.tasks || {};
+        for (const id of Object.keys(tasks)) {
+            const task = tasks[id];
+            if (!task || task.enabled === false || task.event !== "smelting_output") continue;
+            const targets = task.target_items || [];
+            if (!targets.includes(resultId)) continue;
+            if (!mcdriftSmeltPredicateAllows(bot, task.ground_truth)) return false;
+        }
+    } catch (err) {
+        return true;
+    }
+    return true;
+}
+
+function mcdriftSmeltPredicateAllows(bot, predicate) {
+    const normalized = String(predicate || "").trim().replace(/\s+/g, " ");
+
+    let match = normalized.match(/^nearby_block\(([a-z0-9_]+)\)\s*<=k\s*(\d+)$/);
+    if (match) {
+        const blockName = match[1].replace(/^minecraft:/, "");
+        const radius = Number(match[2]);
+        const block = mcData.blocksByName[blockName];
+        return !!block && !!bot.findBlock({ matching: block.id, maxDistance: radius });
+    }
+
+    match = normalized.match(/^time_of_day\(time\)\s+in\s+\[(\d+),\s*(\d+)\]$/);
+    if (match) {
+        const time = ((bot.time.timeOfDay % 24000) + 24000) % 24000;
+        const start = Number(match[1]);
+        const end = Number(match[2]);
+        return start <= end ? time >= start && time <= end : time >= start || time <= end;
+    }
+
+    return true;
 }

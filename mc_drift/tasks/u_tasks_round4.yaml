@@ -1,0 +1,281 @@
+version: 1
+tasks:
+- id: U00
+  action: craftFence
+  goal: craftFence
+  target_item: oak_fence
+  family: resource_update
+  ground_truth: inventory_count(oak_planks) >= 8
+  origin: Craft oak_fence using the standard Minecraft mechanism.
+  drift: >-
+    Craft oak_fence; in the drifted environment, craftFence succeeds only when inventory_count(oak_planks) >= 8.
+- id: U01
+  action: craftBoat
+  goal: craftBoat
+  target_item: oak_boat
+  family: situational_discovery
+  ground_truth: nearby_block(water) <=k 4
+  origin: Craft oak_boat using the standard Minecraft mechanism.
+  drift: >-
+    Craft oak_boat; in the drifted environment, craftBoat succeeds only when nearby_block(water) <=k 4.
+- id: U02
+  action: craftWoodenAxe
+  goal: craftWoodenAxe
+  target_item: wooden_axe
+  family: resource_update
+  ground_truth: inventory_count(stick) >= 2
+  origin: Craft wooden_axe using the standard Minecraft mechanism.
+  drift: >-
+    Craft wooden_axe; in the drifted environment, craftWoodenAxe succeeds only when inventory_count(stick) >= 2.
+- id: U03
+  action: craftWoodenSword
+  goal: craftWoodenSword
+  target_item: wooden_sword
+  family: resource_update
+  ground_truth: inventory_count(oak_planks) >= 2
+  origin: Craft wooden_sword using the standard Minecraft mechanism.
+  drift: >-
+    Craft wooden_sword; in the drifted environment, craftWoodenSword succeeds only when inventory_count(oak_planks) >= 2.
+- id: U04
+  action: craftWoodenShovel
+  goal: craftWoodenShovel
+  target_item: wooden_shovel
+  family: situational_discovery
+  ground_truth: nearby_block(sand) <=k 5
+  origin: Craft wooden_shovel using the standard Minecraft mechanism.
+  drift: >-
+    Craft wooden_shovel; in the drifted environment, craftWoodenShovel succeeds only when nearby_block(sand) <=k 5.
+- id: U05
+  action: craftChest
+  goal: craftChest
+  target_item: chest
+  family: resource_update
+  ground_truth: inventory_count(oak_planks) >= 8
+  origin: Craft chest using the standard Minecraft mechanism.
+  drift: >-
+    Craft chest; in the drifted environment, craftChest succeeds only when inventory_count(oak_planks) >= 8.
+- id: U06
+  action: craftDoor
+  goal: craftDoor
+  target_item: oak_door
+  family: resource_update
+  ground_truth: inventory_count(oak_planks) >= 6
+  origin: Craft oak_door using the standard Minecraft mechanism.
+  drift: >-
+    Craft oak_door; in the drifted environment, craftDoor succeeds only when inventory_count(oak_planks) >= 6.
+- id: U07
+  action: craftLadder
+  goal: craftLadder
+  target_item: ladder
+  family: resource_update
+  ground_truth: inventory_count(stick) >= 7
+  origin: Craft ladder using the standard Minecraft mechanism.
+  drift: >-
+    Craft ladder; in the drifted environment, craftLadder succeeds only when inventory_count(stick) >= 7.
+- id: U08
+  action: craftSign
+  goal: craftSign
+  target_item: oak_sign
+  family: resource_update
+  ground_truth: inventory_count(stick) >= 1
+  origin: Craft oak_sign using the standard Minecraft mechanism.
+  drift: >-
+    Craft oak_sign; in the drifted environment, craftSign succeeds only when inventory_count(stick) >= 1.
+- id: U09
+  action: craftBed
+  goal: craftBed
+  target_item: white_bed
+  family: situational_discovery
+  ground_truth: nearby_block(crafting_table) <=k 3
+  origin: Craft white_bed using the standard Minecraft mechanism.
+  drift: >-
+    Craft white_bed; in the drifted environment, craftBed succeeds only when nearby_block(crafting_table) <=k 3.
+- id: U10
+  action: craftStoneAxe
+  goal: craftStoneAxe
+  target_item: stone_axe
+  family: capability_update
+  ground_truth: held_item(type) = stone_pickaxe
+  origin: Craft stone_axe using the standard Minecraft mechanism.
+  drift: >-
+    Craft stone_axe; in the drifted environment, craftStoneAxe succeeds only when held_item(type) = stone_pickaxe.
+- id: U11
+  action: craftStoneSword
+  goal: craftStoneSword
+  target_item: stone_sword
+  family: resource_update
+  ground_truth: inventory_count(cobblestone) >= 2
+  origin: Craft stone_sword using the standard Minecraft mechanism.
+  drift: >-
+    Craft stone_sword; in the drifted environment, craftStoneSword succeeds only when inventory_count(cobblestone) >= 2.
+- id: U12
+  action: craftStoneShovel
+  goal: craftStoneShovel
+  target_item: stone_shovel
+  family: capability_update
+  ground_truth: held_item(type) = stone_pickaxe
+  origin: Craft stone_shovel using the standard Minecraft mechanism.
+  drift: >-
+    Craft stone_shovel; in the drifted environment, craftStoneShovel succeeds only when held_item(type) = stone_pickaxe.
+- id: U13
+  action: craftStoneHoe
+  goal: craftStoneHoe
+  target_item: stone_hoe
+  family: situational_discovery
+  ground_truth: nearby_block(crafting_table) <=k 3
+  origin: Craft stone_hoe using the standard Minecraft mechanism.
+  drift: >-
+    Craft stone_hoe; in the drifted environment, craftStoneHoe succeeds only when nearby_block(crafting_table) <=k 3.
+- id: U14
+  action: craftLever
+  goal: craftLever
+  target_item: lever
+  family: situational_discovery
+  ground_truth: station_base_block(type) = stone
+  origin: Craft lever using the standard Minecraft mechanism.
+  drift: >-
+    Craft lever; in the drifted environment, craftLever succeeds only when station_base_block(type) = stone.
+- id: U15
+  action: craftRedstoneTorch
+  goal: craftRedstoneTorch
+  target_item: redstone_torch
+  family: boundary_update
+  ground_truth: time_of_day(time) in [13000, 23000]
+  origin: Craft redstone_torch using the standard Minecraft mechanism.
+  drift: >-
+    Craft redstone_torch; in the drifted environment, craftRedstoneTorch succeeds only when time_of_day(time) in [13000, 23000].
+- id: U16
+  action: gatherCoalOre
+  goal: gatherCoalOre
+  target_item: coal
+  family: capability_update
+  ground_truth: held_tool(tier) >= stone
+  origin: Obtain coal using the standard Minecraft mechanism.
+  drift: >-
+    Obtain coal; in the drifted environment, gatherCoalOre succeeds only when held_tool(tier) >= stone.
+- id: U17
+  action: mineGoldOre
+  goal: mineGoldOre
+  target_item: raw_gold
+  family: boundary_update
+  ground_truth: y_level(y) <= -14
+  origin: Obtain raw_gold using the standard Minecraft mechanism.
+  drift: >-
+    Obtain raw_gold; in the drifted environment, mineGoldOre succeeds only when y_level(y) <= -14.
+- id: U18
+  action: smeltRawIron
+  goal: smeltRawIron
+  target_item: iron_ingot
+  family: boundary_update
+  ground_truth: time_of_day(time) in [0, 12000]
+  origin: Smelt iron_ingot using the standard Minecraft mechanism.
+  drift: >-
+    Smelt iron_ingot; in the drifted environment, smeltRawIron succeeds only when time_of_day(time) in [0, 12000].
+- id: U19
+  action: mineDiamondOre
+  goal: mineDiamondOre
+  target_item: diamond
+  family: boundary_update
+  ground_truth: y_level(y) <= -10
+  origin: Obtain diamond using the standard Minecraft mechanism.
+  drift: >-
+    Obtain diamond; in the drifted environment, mineDiamondOre succeeds only when y_level(y) <= -10.
+- id: U20
+  action: smeltRawGold
+  goal: smeltRawGold
+  target_item: gold_ingot
+  family: situational_discovery
+  ground_truth: nearby_block(furnace) <=k 3
+  origin: Smelt gold_ingot using the standard Minecraft mechanism.
+  drift: >-
+    Smelt gold_ingot; in the drifted environment, smeltRawGold succeeds only when nearby_block(furnace) <=k 3.
+- id: U21
+  action: mineRedstoneOre
+  goal: mineRedstoneOre
+  target_item: redstone
+  family: boundary_update
+  ground_truth: y_level(y) <= -12
+  origin: Obtain redstone using the standard Minecraft mechanism.
+  drift: >-
+    Obtain redstone; in the drifted environment, mineRedstoneOre succeeds only when y_level(y) <= -12.
+- id: U22
+  action: craftBucket
+  goal: craftBucket
+  target_item: bucket
+  family: resource_update
+  ground_truth: inventory_count(iron_ingot) >= 3
+  origin: Craft bucket using the standard Minecraft mechanism.
+  drift: >-
+    Craft bucket; in the drifted environment, craftBucket succeeds only when inventory_count(iron_ingot) >= 3.
+- id: U23
+  action: craftShears
+  goal: craftShears
+  target_item: shears
+  family: situational_discovery
+  ground_truth: nearby_entity(sheep) <=k 5
+  origin: Craft shears using the standard Minecraft mechanism.
+  drift: >-
+    Craft shears; in the drifted environment, craftShears succeeds only when nearby_entity(sheep) <=k 5.
+- id: U24
+  action: craftIronBoots
+  goal: craftIronBoots
+  target_item: iron_boots
+  family: resource_update
+  ground_truth: inventory_count(iron_ingot) >= 4
+  origin: Craft iron_boots using the standard Minecraft mechanism.
+  drift: >-
+    Craft iron_boots; in the drifted environment, craftIronBoots succeeds only when inventory_count(iron_ingot) >= 4.
+- id: U25
+  action: craftRail
+  goal: craftRail
+  target_item: rail
+  family: boundary_update
+  ground_truth: time_of_day(time) in [0, 12000]
+  origin: Craft rail using the standard Minecraft mechanism.
+  drift: >-
+    Craft rail; in the drifted environment, craftRail succeeds only when time_of_day(time) in [0, 12000].
+- id: U26
+  action: craftMinecart
+  goal: craftMinecart
+  target_item: minecart
+  family: situational_discovery
+  ground_truth: nearby_block(chest) <=k 3
+  origin: Craft minecart using the standard Minecraft mechanism.
+  drift: >-
+    Craft minecart; in the drifted environment, craftMinecart succeeds only when nearby_block(chest) <=k 3.
+- id: U27
+  action: craftIronAxe
+  goal: craftIronAxe
+  target_item: iron_axe
+  family: capability_update
+  ground_truth: held_item(type) = iron_pickaxe
+  origin: Craft iron_axe using the standard Minecraft mechanism.
+  drift: >-
+    Craft iron_axe; in the drifted environment, craftIronAxe succeeds only when held_item(type) = iron_pickaxe.
+- id: U28
+  action: craftIronSword
+  goal: craftIronSword
+  target_item: iron_sword
+  family: capability_update
+  ground_truth: held_item(type) = iron_pickaxe
+  origin: Craft iron_sword using the standard Minecraft mechanism.
+  drift: >-
+    Craft iron_sword; in the drifted environment, craftIronSword succeeds only when held_item(type) = iron_pickaxe.
+- id: U29
+  action: craftIronShovel
+  goal: craftIronShovel
+  target_item: iron_shovel
+  family: boundary_update
+  ground_truth: time_of_day(time) in [13000, 23000]
+  origin: Craft iron_shovel using the standard Minecraft mechanism.
+  drift: >-
+    Craft iron_shovel; in the drifted environment, craftIronShovel succeeds only when time_of_day(time) in [13000, 23000].
+- id: U30
+  action: craftShield
+  goal: craftShield
+  target_item: shield
+  family: situational_discovery
+  ground_truth: nearby_block(chest) <=k 3
+  origin: Craft shield using the standard Minecraft mechanism.
+  drift: >-
+    Craft shield; in the drifted environment, craftShield succeeds only when nearby_block(chest) <=k 3.

@@ -54,6 +54,24 @@ async function craftItem(bot, name, count = 1) {
 }
 
 function mcdriftCraftGateAllows(bot, resultName) {
+    const iapPath = "/root/.minecraft/config/iap-drift/tasks.json";
+    if (typeof fs !== "undefined" && fs.existsSync(iapPath)) {
+        try {
+            const config = JSON.parse(fs.readFileSync(iapPath, "utf8"));
+            const resultId = `minecraft:${resultName}`;
+            const tasks = config.tasks || {};
+            for (const id of Object.keys(tasks)) {
+                const task = tasks[id];
+                if (!task || task.enabled === false || task.event !== "crafting_output") continue;
+                const targets = task.target_items || [];
+                if (!targets.includes(resultId)) continue;
+                if (!mcdriftPredicateAllows(bot, task.ground_truth)) return false;
+            }
+        } catch (err) {
+            return true;
+        }
+    }
+
     const path = "/root/.minecraft/config/mcdrift.json";
     if (typeof fs === "undefined" || !fs.existsSync(path)) return true;
 
@@ -102,5 +120,38 @@ function mcdriftCraftGateAllows(bot, resultName) {
 
         if (!pass) return false;
     }
+    return true;
+}
+
+function mcdriftPredicateAllows(bot, predicate) {
+    const normalized = String(predicate || "").trim().replace(/\s+/g, " ");
+
+    let match = normalized.match(/^nearby_block\(([a-z0-9_]+)\)\s*<=k\s*(\d+)$/);
+    if (match) {
+        const blockName = match[1].replace(/^minecraft:/, "");
+        const radius = Number(match[2]);
+        const block = mcData.blocksByName[blockName];
+        return !!block && !!bot.findBlock({ matching: block.id, maxDistance: radius });
+    }
+
+    match = normalized.match(/^nearby_entity\(([a-z0-9_]+)\)\s*<=k\s*(\d+)$/);
+    if (match) {
+        const entityName = match[1].replace(/^minecraft:/, "");
+        const radius = Number(match[2]);
+        const entity = bot.nearestEntity(e => {
+            const name = e.name || e.type || "";
+            return name === entityName && e.position.distanceTo(bot.entity.position) <= radius;
+        });
+        return !!entity;
+    }
+
+    match = normalized.match(/^time_of_day\(time\)\s+in\s+\[(\d+),\s*(\d+)\]$/);
+    if (match) {
+        const time = ((bot.time.timeOfDay % 24000) + 24000) % 24000;
+        const start = Number(match[1]);
+        const end = Number(match[2]);
+        return start <= end ? time >= start && time <= end : time >= start || time <= end;
+    }
+
     return true;
 }

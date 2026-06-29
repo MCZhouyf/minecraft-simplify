@@ -15,23 +15,15 @@ import org.iap.mcdrift.predicate.PredicateEvaluator;
 public class MiningGate {
     public static void register() {
         PlayerBlockBreakEvents.BEFORE.register((world, player, pos, state, blockEntity) -> {
-            if (world.isClient()) {
-                return true;
-            }
-            if (!(player instanceof ServerPlayerEntity serverPlayer) || !(world instanceof ServerWorld serverWorld)) {
-                return true;
-            }
-            if (!IapDriftMod.config().active) {
-                return true;
-            }
+            if (world.isClient()) return true;
+            if (!(player instanceof ServerPlayerEntity serverPlayer) || !(world instanceof ServerWorld serverWorld)) return true;
+            if (!IapDriftMod.config().active) return true;
 
             Identifier blockId = Registry.BLOCK.getId(state.getBlock());
             String blockName = blockId.toString();
 
             for (DriftTask task : IapDriftMod.config().getActiveBlockBreakTasks()) {
-                if (task.target_blocks == null || !task.target_blocks.contains(blockName)) {
-                    continue;
-                }
+                if (task.target_blocks == null || !task.target_blocks.contains(blockName)) continue;
 
                 PredicateEvaluator.EvalResult result =
                         PredicateEvaluator.evaluate(task.ground_truth, serverPlayer, serverWorld, pos);
@@ -58,10 +50,8 @@ public class MiningGate {
                     serverPlayer.sendMessage(Text.literal(message), false);
                     return false;
                 }
-
                 return true;
             }
-
             return true;
         });
     }

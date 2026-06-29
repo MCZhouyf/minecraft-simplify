@@ -40,7 +40,5 @@ public class DriftLogger {
         }
     }
 
-    public Path getLogPath() {
-        return logPath;
-    }
+    public Path getLogPath() { return logPath; }
 }
